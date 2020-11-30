@@ -405,7 +405,7 @@ left: 6px;
 overflow: hidden;
 }
 .SERVCONT{
-    width: 35%;
+    width: 71%;
     float: right;
     margin-right: 14%;
    margin-bottom: 5vh;
@@ -413,16 +413,18 @@ overflow: hidden;
     font-size: 14px;
     position: relative;
 }
-.SERVCONT h3{
-    text-align: right;
 
-  font-size: 24px;
+.SERVCONT h3{
+    text-align: left;
+margin: 0;
+margin-top: 30px;
+  font-size: 34px;
   
 }
 .SERVCONT p {
     text-align: justify;
     font-family: DINOT-regular;
-    font-size: 16px;
+    font-size: 19px;
 
     
 }
@@ -434,14 +436,17 @@ overflow: hidden;
 }
 .contimgserv{
     width: 90%;
-    height: 40vh;
+    height: 45vh;
     background: #525659;
     float: right;
-    position: relative;
+    position: absolute;
   background: url('../img/pexels-maria-orlova-4906410.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 50px; bottom: 0px;
+  right: 0px;
+
+
   
 
 }
@@ -450,7 +455,7 @@ overflow: hidden;
     content: '';
     position: absolute;
     height: 55vh;
-    width: 25vh;
+    width: 14vh;
     background:#fbe8188f  !important;
 bottom: 0px;
     left: 50px;
@@ -460,26 +465,17 @@ bottom: 0px;
     position: absolute;
     height: 50vh;
     z-index: 2000;
-    width: 20px;
+    width: 15px;
     background: #FBE818;
     top: 0px;
     right: 70px;
 }
 
 
-.graydeco{
-    position: absolute;
-    height: 40px;
-    width: 25vh;
-    left: 160px;
-    background:#E6E6E6 ;
-    top:0px;
-    z-index: -1;
 
-}
 .redirecth1{
     position:absolute;
-   bottom: 46vh;
+   bottom: 51vh;
    width: 56%;
    transform: translate(45%);
    display: flex;
@@ -501,13 +497,13 @@ font-weight: bold;
 /*EDPAGE*/
 /*EDPAGE*/
 /*EDPAGE*/
-.fa-arrow-up{
+.arrow-up{
     display: block;
     position: absolute;
     right: 20px;
-color: yellow;
-text-shadow:5px 5px 0px black;
-    font-size: 40px;
+display: flex;
+    font-size: 20px;
+    
     cursor: pointer;
     
 }
@@ -516,6 +512,7 @@ text-shadow:5px 5px 0px black;
     width: 100%;
 padding-top: 20vh;
 padding-bottom: 200px;
+margin-left: 40px;
 }
 .edcont .frstdv:nth-child(1){
     width:  50%;
@@ -537,12 +534,12 @@ padding-bottom: 200px;
 .edcont div:nth-child(1) > h1::before{
     content: '';
     background: #FBE818;
-    height: 26.43px;
-    width: 285px;
+    height: 26px;
+    width: 250px;
     display: block;
     position: absolute;
     z-index: -1;
-    left: -40px;
+    left: -20px;
     bottom: -1px;
 }
 .edcont div:nth-child(1) h1 b{
