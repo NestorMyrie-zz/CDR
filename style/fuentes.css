@@ -1,0 +1,21 @@
+@font-face{
+    font-family: DINOT-Bold;
+    src:url('../fuentes/DINOT-Bold.ttf');
+
+}
+@font-face{
+    font-family: DINOT-black-regular;
+    src:url('../fuentes/DINBlackRegular.otf');
+
+}
+
+@font-face{
+    font-family: DINOT-Medium;
+    src:url('../fuentes/DINOT-Medium.ttf');
+
+}
+@font-face{
+    font-family: DINOT-regular;
+    src:url('../fuentes/DINOT-Regular.ttf');
+
+}
