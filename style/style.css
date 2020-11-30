@@ -223,6 +223,8 @@ cursor:pointer;list-style: none;}
     opacity: 0;
     z-index: 3000;
      }
+
+   
     
     .sbmenu ul{
     list-style: url('/img/arrow.png');
@@ -235,6 +237,7 @@ cursor:pointer;list-style: none;}
     
     }
     
+  
     .sbmenu ul li a {
     text-decoration: none;
     color: black;
@@ -500,12 +503,20 @@ font-weight: bold;
 .arrow-up{
     display: block;
     position: absolute;
-    right: 20px;
+    right: -10vh;
 display: flex;
-    font-size: 20px;
-
+    font-size: 18px;
+    top: 40vh;
+width: 300px;
+transform: rotate(-90deg);
     cursor: pointer;
-    
+ text-align: unset; 
+ font-weight: bold;  
+ display: none;
+}
+.arrow-u{
+    height: 20px;
+    margin:  0px 10px;
 }
 .edcont{
     height:100vh ;
@@ -603,3 +614,4 @@ display: none;
      margin-right: 20px;
      cursor: pointer;
  }
+ 

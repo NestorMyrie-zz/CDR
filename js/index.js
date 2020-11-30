@@ -111,9 +111,12 @@ $('#scdcarousel').click(()=>{
 $('#edej').click(()=>{
     $('.servicdiv').slideUp()
     $('.redirecth1').slideUp()
-
+    $('.arrow-up').slideDown()
 })
-$('.fa-arrow-up').click(()=>{
+$('.arrow-up').click(()=>{
     $('.servicdiv').slideDown()
     $('.redirecth1').slideDown()
+    $('.arrow-up').slideUp()
+  
 })
+
