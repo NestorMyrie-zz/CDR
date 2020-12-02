@@ -780,7 +780,9 @@ z-index: -1;
 
 @media screen and (max-width: 800px) {
 
-
+.contactcont,.contactform ,form{
+  overflow: hidden !important;
+}
   .formh1 {
     
    transform: translate(0,-25vh);
