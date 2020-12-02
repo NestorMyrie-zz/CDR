@@ -174,6 +174,7 @@ cursor:pointer;list-style: none;}
     flex-direction: column;
     position: absolute;
     right: 20px;
+  
     top: 20px;
     
     cursor: pointer;
@@ -194,14 +195,14 @@ cursor:pointer;list-style: none;}
 }
 
 .rt1{
-    width: 80%;
-    transform: rotate(50deg) translate(8px,12px);
+    width: 70%;
+    transform: rotate(50deg) translate(8px,11px);
 }
-.rt2{transform: rotate(-50deg) translate(8px,-10px);width: 80%;}
+.rt2{transform: rotate(-50deg) translate(8px,-11px);width: 70%;}
 
 
 @media screen and (max-width:700px){
-    body{background: red;}
+   
 
 
 
@@ -223,6 +224,8 @@ cursor:pointer;list-style: none;}
     opacity: 0;
     z-index: 3000;
      }
+
+   
     
     .sbmenu ul{
     list-style: url('/img/arrow.png');
@@ -235,6 +238,7 @@ cursor:pointer;list-style: none;}
     
     }
     
+  
     .sbmenu ul li a {
     text-decoration: none;
     color: black;
@@ -271,7 +275,7 @@ cursor:pointer;list-style: none;}
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    padding-top: 20vh;
 
 
 }
@@ -329,6 +333,7 @@ transform: translate(-14px,15px);}
     border-radius: 50%;
     background: #A7A5A6;
     position: relative;
+
 }
 
 .container-whois section ul li b{
@@ -405,7 +410,7 @@ left: 6px;
 overflow: hidden;
 }
 .SERVCONT{
-    width: 35%;
+    width: 71%;
     float: right;
     margin-right: 14%;
    margin-bottom: 5vh;
@@ -413,16 +418,18 @@ overflow: hidden;
     font-size: 14px;
     position: relative;
 }
-.SERVCONT h3{
-    text-align: right;
 
-  font-size: 24px;
+.SERVCONT h3{
+    text-align: left;
+margin: 0;
+margin-top: 30px;
+  font-size: 34px;
   
 }
 .SERVCONT p {
     text-align: justify;
     font-family: DINOT-regular;
-    font-size: 16px;
+    font-size: 19px;
 
     
 }
@@ -434,14 +441,17 @@ overflow: hidden;
 }
 .contimgserv{
     width: 90%;
-    height: 40vh;
+    height: 45vh;
     background: #525659;
     float: right;
-    position: relative;
+    position: absolute;
   background: url('../img/pexels-maria-orlova-4906410.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 50px; bottom: 0px;
+  right: 0px;
+
+
   
 
 }
@@ -450,7 +460,7 @@ overflow: hidden;
     content: '';
     position: absolute;
     height: 55vh;
-    width: 25vh;
+    width: 14vh;
     background:#fbe8188f  !important;
 bottom: 0px;
     left: 50px;
@@ -460,26 +470,17 @@ bottom: 0px;
     position: absolute;
     height: 50vh;
     z-index: 2000;
-    width: 20px;
+    width: 15px;
     background: #FBE818;
     top: 0px;
     right: 70px;
 }
 
 
-.graydeco{
-    position: absolute;
-    height: 40px;
-    width: 25vh;
-    left: 160px;
-    background:#E6E6E6 ;
-    top:0px;
-    z-index: -1;
 
-}
 .redirecth1{
     position:absolute;
-   bottom: 46vh;
+   bottom: 51vh;
    width: 56%;
    transform: translate(45%);
    display: flex;
@@ -501,21 +502,30 @@ font-weight: bold;
 /*EDPAGE*/
 /*EDPAGE*/
 /*EDPAGE*/
-.fa-arrow-up{
+.arrow-up{
     display: block;
     position: absolute;
-    right: 20px;
-color: yellow;
-text-shadow:5px 5px 0px black;
-    font-size: 40px;
+    right: -10vh;
+display: flex;
+    font-size: 18px;
+    top: 40vh;
+width: 300px;
+transform: rotate(-90deg);
     cursor: pointer;
-    
+ text-align: unset; 
+ font-weight: bold;  
+ display: none;
+}
+.arrow-u{
+    height: 20px;
+    margin:  0px 10px;
 }
 .edcont{
     height:100vh ;
     width: 100%;
 padding-top: 20vh;
 padding-bottom: 200px;
+margin-left: 40px;
 }
 .edcont .frstdv:nth-child(1){
     width:  50%;
@@ -537,12 +547,12 @@ padding-bottom: 200px;
 .edcont div:nth-child(1) > h1::before{
     content: '';
     background: #FBE818;
-    height: 26.43px;
-    width: 285px;
+    height: 26px;
+    width: 250px;
     display: block;
     position: absolute;
     z-index: -1;
-    left: -40px;
+    left: -20px;
     bottom: -1px;
 }
 .edcont div:nth-child(1) h1 b{
@@ -606,3 +616,164 @@ display: none;
      margin-right: 20px;
      cursor: pointer;
  }
+ 
+ /* FORMULARIOOO*/
+
+ .contactcont{
+    height: 100vh;
+    width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.contactform{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactform form{
+    width: 100%;
+    display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  align-items: center;
+  flex-direction: column;
+  
+    
+}
+.contactform form input,textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8b8b8b;
+position: relative;
+font-size: 22px;
+width: 70%;
+}
+.formh1{
+    position: absolute;
+    top: 15vh;
+    left: 13vh;
+    font-size: 40px;
+    font-family: DINOT-bold;
+    border-bottom: 5px solid yellow;
+}
+.bardeco2{
+    position: absolute;
+    height: 60vh;
+    width: 20px;
+    background: #FFED00;
+    left: 10px;
+    z-index: -1;
+    bottom :0px
+}
+
+.contactform form input:nth-child(1) {
+    grid-row: 1/1;
+}
+.contactform form input:nth-child(2) {
+    grid-row: 1/1;
+}
+
+.input{transition: all 300ms;}
+.input:focus{
+    border-bottom: 1px solid rgb(240, 184, 0) ;
+}
+
+.input:focus::placeholder{
+    color:rgb(240, 164, 0) ;
+}
+.mensaje{
+grid-row: 2/4;
+border: 1px solid #8b8b8b !important;
+padding: 0px;
+border-radius: 5px;
+max-width:100%;
+max-height: 100px;
+padding: 10px;
+}
+.contenv{
+    height:50px;
+    width: 400px;
+    transform: translate(15%);
+}
+.mensaje::placeholder{text-align: center;}
+
+.contactcont .contactimg {
+    
+    height: 70%;
+    width: 40%;
+ background: url('../img/pexels-yury-kim-585419.jpg');   
+ background-size:cover ;
+ background-repeat: no-repeat;
+ position: relative;
+}
+.contactimg::before{
+    content: '';
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    left: -50px;
+    background: rgba(255, 255, 0, 0.562); 
+    top: 26%;
+}
+
+.enviar{
+    align-self: center;
+    background: rgb(240, 167, 9);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    color: white ;
+    font-family: DINOT-bold;
+    font-size: 20px;
+    border: none !important;
+    border-radius: 2px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+    transition: all 300ms;
+}
+.enviar:hover{
+   
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.247);
+}
+.enviar:hover .contenv img{
+    display: none;
+}
+.contenv img{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    transform: translate(50px,19px);
+    display: block;
+
+}
+.mensaje:focus{
+    border: 1px solid rgb(240, 184, 0) !important;
+}
+.ocon{
+    width: 60%;
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-around;
+}
+
+.ocon i{
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+
+
+
+
+    
+}
