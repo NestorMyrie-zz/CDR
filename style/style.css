@@ -617,8 +617,10 @@ display: none;
      cursor: pointer;
  }
  
- /* FORMULARIOOO*/
-
+    /* FORMULARIO*/
+    /* FORMULARIO*/
+    /* FORMULARIO*/
+    /* FORMULARIO*/
  .contactcont{
     height: 100vh;
     width: 100vw;
@@ -652,7 +654,14 @@ display: none;
 position: relative;
 font-size: 22px;
 width: 70%;
+
 }
+
+/*POR AQUÍ PASÓ CHRISTIAN*/
+form{
+    margin-top: 120px;
+}
+
 .formh1{
     position: absolute;
     top: 15vh;
@@ -706,10 +715,10 @@ padding: 10px;
     
     height: 70%;
     width: 40%;
- background: url('../img/pexels-yury-kim-585419.jpg');   
- background-size:cover ;
- background-repeat: no-repeat;
- position: relative;
+    background: url('../img/pexels-yury-kim-585419.jpg');   
+    background-size:cover ;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .contactimg::before{
     content: '';
