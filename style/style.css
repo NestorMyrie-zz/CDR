@@ -231,9 +231,10 @@ nav i {
     display: flex;
     justify-content: cente;
     transition: all 300ms;
-    opacity: 1;
+    opacity: 0;
     z-index: 3000;
     overflow: hidden;
+    display: none;
   }
 
   .sbmenu ul {
@@ -260,6 +261,8 @@ nav i {
   .btnms {
     right: 0px;
     opacity: 1;
+    display:block ;
+    
   }
   .opdacidbg {
     height: 100%;
@@ -272,9 +275,10 @@ nav i {
     transition: all 200ms;
   }
   .todcont{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
+    
   }
 }
 
