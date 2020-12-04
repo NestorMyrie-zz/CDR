@@ -107,7 +107,7 @@ $(".arrow-up").click(() => {
   $(".arrow-up").slideUp();
 });
 
-$('.enviar').mouseover(()=>{
+/*$('.enviar').mouseover(()=>{
  
     $('.arrowenv').animate({
       left: 10
@@ -121,3 +121,4 @@ $('.enviar').mouseout(()=>{
     },300)
     
 })
+ */

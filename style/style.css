@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  overflow: hidden;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100% !important;
 }
 * {
   font-family: DINOT-regular;
@@ -13,6 +15,7 @@ nav {
   padding: 10px 0px;
   justify-content: space-between;
   position: absolute;
+  
 }
 
 .icon1 img {
@@ -34,13 +37,15 @@ nav i {
   background: white;
   width: 35%;
   position: absolute;
-  right: -35%;
+  right: -100%;
   top: 0px;
   display: flex;
-  justify-content: cente;
+  justify-content: center;
   transition: all 300ms;
   opacity: 0;
   z-index: 3000;
+
+  
 }
 
 .sbmenu ul {
@@ -213,7 +218,7 @@ nav i {
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
-    z-index: 4000;
+    z-index: 2000;
   }
 
   .sbmenu {
@@ -221,13 +226,14 @@ nav i {
     background: white;
     width: 65%;
     position: absolute;
-    right: -35%;
+    right: -200%;
     top: 0px;
     display: flex;
     justify-content: cente;
     transition: all 300ms;
-    opacity: 0;
+    opacity: 1;
     z-index: 3000;
+    overflow: hidden;
   }
 
   .sbmenu ul {
@@ -238,6 +244,8 @@ nav i {
 
     flex-direction: column;
     margin-left: 20px;
+
+    
   }
 
   .sbmenu ul li a {
@@ -262,6 +270,11 @@ nav i {
     z-index: 1000;
     display: none;
     transition: all 200ms;
+  }
+  .todcont{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -712,7 +725,7 @@ textarea {
 
 .enviar {
 
-  background: rgb(202, 144, 19);
+  background: #FBE818;
   border: none;
   cursor: pointer;
   position: relative;
@@ -739,33 +752,45 @@ z-index: 2;
 .enviar::before {
 content: '';
 height: 44%;
-width: 90%;
+width: 70%;
 position: absolute;
-background: #FBE818;
+background: #ebdb2e;
 bottom: 0px;
-left: -100%;
+left: 10px;
+
 transition: all 300ms;
 z-index: -1;
 }
-.enviar:hover::before {
-    left: 0px;
-}
-.enviar:hover .contenv img {
-  display: none;
+.enviar::after{
+  content: '';
+  height: 15px;
+  width: 30px;
+  display: block;
+  background-repeat:no-repeat;
+  position: absolute;
+  background-size: contain;
+  left: 15%;
+  transition: all 300ms;
 
+  background:url('../img/arrowss.png')
 }
-.contenv img {
+
+.enviar:hover::before ,.enviar:hover::after{
+    left: 20%;
+}
+
+.arrowenv {
   position: absolute;
   z-index: 10;
-  color: white;
   transform: translate(50px, 19px);
   display: block;
 }
+
 .mensaje:focus {
   border: 1px solid rgb(240, 184, 0) !important;
 }
 .ocon {
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
 
