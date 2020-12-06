@@ -2,17 +2,25 @@
 
     <!DOCTYPE html>
     <html lang="es">
-    <head>
+       <head> <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+       
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/fuentes.css">
         <link rel="stylesheet" href="../style/style.css">
         <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../style/carosel.css">
     </head>
     <body>
        
-        
+        <script>
+            $( function() {
+    $( "#accordion" ).accordion({ heightStyle: "content" });
+    $('h3').click(()=>{})
+  } );
+        </script>
     
         <nav>
             <h1 class="icon1"><img src="../img/Grupo 507.png" alt="" srcset=""></h1>
@@ -34,7 +42,42 @@
                 <li><a href="./contact.html" class="regular">Contacto</a></li>
                 </ul>
         </div>
-    
+    <style>
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    /* border: 1px solid #003eff; */
+    border: none !important;
+}
+
+
+        body{
+            overflow-y:scroll !important;
+        }
+        .secondtdiv,.trediv,.cuartdiv{
+            display:none
+        }
+        ::-webkit-scrollbar{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    background-color: #E0E1E1;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #A7A5A6;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    /* border: 1px solid #003eff; */
+    background: none;
+   
+}
+    </style>
     
         <div class="container-whois">
             <section>
@@ -45,7 +88,7 @@
                 <li> <span class="listbtn1"></span> <b></b>Membresías y Alianzas</li>
             </ul>
             </section>
-            <div class="">
+            <div class="firstdiv">
                 <h1>¿Quiénes Somos?</h1>
                 <div class="conttext">
                     <p>En CDR Consulting prestamos nuestros servicios con profesionalismo e integridad, dándole gran importancia a la honestidad y la transparencia. Fomentamos el trabajo en equipo y reflexionamos acerca del impacto que pueden tener nuestras acciones en la sociedad. </p>
@@ -54,10 +97,93 @@
                         <p>Es tan importante como oportuno comprometernos a construir relaciones fuertes y duraderas con clientes y proveedores, fundadas en la confianza y el beneficio mutuo. </p>
                     </div>
             </div>
+            <div class="secondtdiv">
+                <h1>Compliance</h1>
+                <div class="conttext">
+                  
+                     <p>En CDR Consulting prestamos nuestros servicios con profesionalismo e integridad , dándole gran importancia a la honestidad y la transparencia. Fomentamos el trabajo en equipo y reflexionamos acerca del impacto que pueden tener nuestras acciones en la sociedad. <br><br>
+
+                        Ejercemos nuestra actividad corporativa de manera socialmente responsable, promoviendo buenas prácticas dentro y fuera de la empresa y asegurándonos de que nuestros socios e intermediarios estén alineados y comprometidos con nuestros principios y normas. <br><br>
+                        
+                        Creemos que la corrupción es dañina tanto para nuestro entorno como para el desempeño de nuestra empresa. Por ello, aplicamos una política de cero tolerancia, manteniendo nuestras acciones en concordancia con el espíritu de CDR Consulting.
+                        </p>
+                    </div>
+
+                        <h1>Código de Ética</h1>
+                
+                    <div class="conttext">
+                      
+                      <p>
+                        En CDR Consulting nos regimos por los más altos valores y la ética profesional, así como una estricta confidencialidad de los asuntos que manejamos.  <br><br>
+                        
+                        Asesoramos a nuestros clientes, protegiendo sus intereses y cuidando que nuestras recomendaciones y las acciones de nuestros clientes cumplan con las mejores prácticas de la industria y las políticas antisoborno.<br><br>
+                        
+                        Asimismo, cuidamos la información y los intereses de nuestros clientes, suscribiendo en todos los casos convenios de confidencialidad para asegurarles que su información está siempre en buenas manos. <br><br>
+                        
+                        Nuestro equipo está compuesto por profesionales altamente calificados y de gran trayectoria, garantizándole una asesoría especializada, eficiente, y empática.<br><br>
+                        </p>
+                
+                        </div>
+                    </div>
+                    <div class="trediv">
+                        <h1> Responsabilidad social </h1>
+                        <div class="conttext">
+                            <p>Nos interesa ser parte activa de la sociedad en la que desarrollamos nuestras actividades, razón por la cual participamos en iniciativas que ayuden a mejorar la calidad de vida de los que nos rodean, enfocándonos en dos rubros principales:</p> <br> <br>
+                            <div id="accordion">
+                                <h3> (i)	EXCELENCIA ACADÉMICA: </h3>
+                                <div>
+                                  <p>
+                                  Apoyamos a estudiantes talentosos peruanos con necesidades económicas para que puedan acceder a una educación de alto nivel, a través de la creación de becas anuales que permitan cubrir total o parcialmente los derechos académicos en las universidades más prestigiosas del país. Y los comprometemos a continuar con esta filosofía de agradecimiento y apoyo. 
+                               Nos motiva nuestra convicción de que la educación constituye el mejor camino para disminuir la brecha socioeconómica, y elevar la calidad de vida de las familias peruanas. 
+                                  </p>
+                                </div>
+                                <h3>(ii)	EQUIDAD DE GÉNERO: </h3>
+                                <div>
+                                  <p>
+                               Reconocemos el desafío que nuestro país enfrenta en la reducción de la brecha de género en el mercado laboral y en la creación de oportunidades profesionales para hombres y mujeres sin distinción. En ese sentido, brindamos charlas y talleres gratuitos en Lima y provincias, con la finalidad de promover la generación de mayores espacios y oportunidades laborales para mujeres vinculadas al rubro del derecho y la ingeniería.
+                              
+                                  </p>
+                                </div>
+                                <h3>(iii)	PROGRAMAS DE EMPODERAMIENTO FEMENINO: </h3>
+                                <div>
+                                  <p>
+                                Reconocemos que lamentablemente el Perú presenta una de las estadísticas más altas en violencia contra la mujer, reflejándose incluso en altos porcentajes de feminicidio, que crean un ambiente de inseguridad y zozobra en la sociedad.
+                              
+                              Estamos comprometidos a contribuir a que esta realidad cambie. Soñamos con una sociedad más igualitaria donde la violencia se reduzca a su mínima expresión. Por ello, CDR desarrolla programas de empoderamiento femenino y de sensibilización sobre temas de género en colegios nacionales, con la finalidad de crear conciencia y contribuir al cambio de paradigmas y estereotipos de género.
+                              
+                              Consideramos que manteniéndonos enfocados en esos tres aspectos podemos contribuir al desarrollo de la sociedad peruana fomentando nuestro crecimiento como país. 
+                              
+                              
+                                  </p>
+                                
+                                </div>
+                             
+                               
+                              </div>
+                            </div>
+                    </div>
+
+                    <div class="cuartdiv">
+                        <h1>Membresías</h1>
+                        <div class="conttext">
+                          
+                             <p>Somos miembros reconocidos de algunas de las principales entidades del derecho y el arbitraje en Perú y el mundo
+                                
+                                Creemos que la corrupción es dañina tanto para nuestro entorno como para el desempeño de nuestra empresa. Por ello, aplicamos una política de cero tolerancia, manteniendo nuestras acciones en concordancia con el espíritu de CDR Consulting.
+                                </p>
+                            </div>
+        
+                               <iframe src="../aaaa.html" ></iframe>
+                            </div>
+
+            </div>
+
+            
+
             <p class="contact"><img src="/img/arrow.png" alt=""> Contáctanos</p>
             
         </div>
-          
+       
     
                 <div class="opdacidbg">
 

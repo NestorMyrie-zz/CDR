@@ -107,6 +107,29 @@ $(".arrow-up").click(() => {
   $(".arrow-up").slideUp();
 });
 
+
+
+
+
+class showhiden{
+  constructor(clk,mos,ocul1,ocul2,ocul3){
+    this.clk = clk;
+    this.mos = mos;
+    this.ocul1= ocul1;
+    this.ocul2= ocul2;
+    this.ocul3= ocul3;
+  }
+addrem(){
+  $(this.clk).click(()=>{
+    $(this.mos).slideDown()
+    $(this.ocul1).slideUP()
+    $(this.ocul2).slideUP()
+    $(this.ocul3).slideUP()
+  })
+
+}
+}
+
 /*$('.enviar').mouseover(()=>{
  
     $('.arrowenv').animate({
@@ -122,3 +145,9 @@ $('.enviar').mouseout(()=>{
     
 })
  */
+$('#accordion div p').css({width:'80vh'})
+
+
+
+/** slider acordeon*/
+

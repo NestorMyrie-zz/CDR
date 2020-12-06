@@ -276,23 +276,33 @@ nav i {
 /*Paggina quienes somos */
 
 .container-whois {
-  height: 100%;
-  width: 100%;
+  height: 71vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20vh;
 }
+iframe{
+  width: 100%;
+  height: 300px;
+ overflow: hidden ;
+  border: none;
+}
+
 .container-whois section {
   width: 27%;
   height: 200px;
   margin-left: 30px;
+  position: relative;
+
 }
 .container-whois div {
   width: 76%;
   margin-left: 50px;
   position: relative;
   margin-right: 30px;
+  
 }
 .container-whois > div::before {
   content: "";
@@ -304,9 +314,11 @@ nav i {
 .container-whois section ul {
   display: flex;
   flex-direction: column;
-  height: 100%;
+height: 200px;
   list-style: none;
-
+  position: fixed;
+  top: 300px;
+transform: scale(1.0);
   justify-content: space-between;
 }
 .container-whois section ul li {
@@ -348,8 +360,9 @@ nav i {
   background: #fbe818 !important;
 }
 .contact {
-  position: absolute;
-  right: 10px;
+  position: fixed;
+top: 50vh;
+right: 0vw;
   transform: rotate(-90deg);
   font-family: DINOT-regular;
   font-weight: bold;
@@ -361,7 +374,7 @@ nav i {
 .frd::before {
   content: "";
   position: absolute;
-  height: 200px;
+  height: 1200%;
   width: 2px;
   background: #a7a5a6;
   display: block;
@@ -374,6 +387,28 @@ nav i {
   text-align: justify;
 }
 
+#accordion{
+  width: 40em;
+margin: 0 0% !important;
+margin-bottom: 100px !important;}
+#accordion h3{
+  background:#A7A5A6;
+  display:block;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+.arrow{
+  margin-right: 20px;
+  transition:all 30ms
+}
+#accordion div{
+  margin: 0;
+}
+.ui-accordion .ui-accordion-content {
+  overflow: hidden;
+}
 /*pagina de Columnas*/
 
 .columns {
@@ -406,6 +441,7 @@ nav i {
 /*SERVICES*/
 /*SERVICES*/
 /*SERVICES*/
+
 
 .servicdiv {
   height: 100vh;
@@ -493,6 +529,7 @@ nav i {
   font-weight: bold;
   font-size: 23px;
 }
+
 
 /*EDPAGE*/
 /*EDPAGE*/
@@ -610,6 +647,7 @@ nav i {
 /* FORMULARIO*/
 /* FORMULARIO*/
 /* FORMULARIO*/
+
 .contactcont {
   height: 100vh;
   width: 100vw;
@@ -632,6 +670,7 @@ nav i {
   align-items: center;
   flex-direction: column;
   margin-top: 120px;
+
 }
 .contactform form input,
 textarea {
@@ -641,6 +680,7 @@ textarea {
   position: relative;
   font-size: 22px;
   width: 70%;
+  height: 40px;
 }
 
 .formh1 {
@@ -662,16 +702,13 @@ textarea {
   bottom: 0px;
 }
 
-.contactform form input:nth-child(1) {
-  grid-row: 1/1;
-}
-.contactform form input:nth-child(2) {
-  grid-row: 1/1;
-}
+
+
 
 .input {
   transition: all 300ms;
   overflow: hidden;
+  margin-bottom: 30px  !important;
 }
 .input:focus {
   border-bottom: 1px solid rgb(240, 184, 0);
@@ -733,15 +770,16 @@ textarea {
   border-radius: 2px;
   display: inline-block;
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-
+transform: translate(20%);
   transition: all 300ms;
   overflow: hidden;
 z-index: 2;
+
 }
 
 .enviar::before {
@@ -751,7 +789,7 @@ width: 25%;
 position: absolute;
 background: #FBE818;
 bottom: 0px;
-left: 50px;
+left: -150px;
 
 transition: all 300ms;
 z-index: -1;
@@ -808,14 +846,23 @@ flex-direction: column;
    height: 25px;
    margin: 15px 15px;
 }
-
+@media screen and (max-height:700px){
+ form{
+   padding-top: 200px;
+   height: 70vh !important;
+ }
 @media screen and (max-width: 800px) {
-
+  .input {
+    transition: all 300ms;
+    overflow: hidden;
+    margin-bottom: 0px  !important;
+  }
+  
 .contactcont,.contactform ,form{
   overflow: hidden !important;
 }
   .formh1 {
-    
+    display: none;
    transform: translate(0,-25vh);
    left: 0;
    margin-left: 13%;
@@ -841,7 +888,7 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
     margin-top: 120px;
-    height: 60%;
+    height: 80%;
     
   }
   .contactform form input,
@@ -853,12 +900,12 @@ flex-direction: column;
     font-size: 22px;
     width: 92%;
     height:20%;
-    margin-top: 30px;
+    margin-top: 20px;
     
   }
   
   
-  .bardeco2{ left: 0px;}
+
  
 
   .contenv {
