@@ -275,6 +275,7 @@ nav i {
 
 /*Paggina quienes somos */
 
+
 .container-whois {
   height: 71vh;
   width: 100vw;
@@ -284,7 +285,8 @@ nav i {
   padding-top: 20vh;
 }
 iframe{
-  width: 100%;
+  width: 93%;
+  margin-left: 20px;
   height: 300px;
  overflow: hidden ;
   border: none;
@@ -298,11 +300,25 @@ iframe{
 
 }
 .container-whois div {
-  width: 76%;
-  margin-left: 50px;
+  
+  margin-left: 20px;
   position: relative;
   margin-right: 30px;
   
+}
+.wocont{
+  width: 65%;
+  margin-right: 70px !important;
+ 
+}
+#wo1,#wo2,#wo3,#wo4{
+  cursor: pointer;
+}
+@media screen and (max-width:1138px){
+  .secondtdiv{
+    margin-top: 200px;
+    transform: scale(0.9);
+  }
 }
 .container-whois > div::before {
   content: "";
@@ -326,7 +342,7 @@ transform: scale(1.0);
   font-family: DINOT-regular;
 }
 .container-whois div h1 {
-  padding-left: 7vh;
+  padding-left: 3vh;
   font-family: DINOT-bold;
   font-weight: bold;
   position: relative;
@@ -961,4 +977,4 @@ flex-direction: column;
    margin: 15px 15px;
 }
 
-}
+}}

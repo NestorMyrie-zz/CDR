@@ -122,14 +122,26 @@ class showhiden{
 addrem(){
   $(this.clk).click(()=>{
     $(this.mos).slideDown()
-    $(this.ocul1).slideUP()
-    $(this.ocul2).slideUP()
-    $(this.ocul3).slideUP()
+    $(this.ocul1).slideUp()
+    $(this.ocul2).slideUp()
+    $(this.ocul3).slideUp()
+   
   })
 
 }
 }
+var btnone= new showhiden('#wo1','.firstdiv','.secondtdiv','.trediv','.cuartdiv')
+btnone.addrem()
 
+var btntwo= new showhiden('#wo2','.secondtdiv','.firstdiv','.trediv','.cuartdiv')
+btntwo.addrem()
+
+
+var btntre= new showhiden('#wo3','.trediv','.firstdiv','.secondtdiv','.cuartdiv')
+btntre.addrem()
+
+var btncuat= new showhiden('#wo4','.cuartdiv','.secondtdiv','.firstdiv','.trediv')
+btncuat.addrem()
 /*$('.enviar').mouseover(()=>{
  
     $('.arrowenv').animate({
