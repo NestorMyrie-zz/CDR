@@ -107,7 +107,42 @@ $(".arrow-up").click(() => {
   $(".arrow-up").slideUp();
 });
 
-$('.enviar').mouseover(()=>{
+
+
+
+
+class showhiden{
+  constructor(clk,mos,ocul1,ocul2,ocul3){
+    this.clk = clk;
+    this.mos = mos;
+    this.ocul1= ocul1;
+    this.ocul2= ocul2;
+    this.ocul3= ocul3;
+  }
+addrem(){
+  $(this.clk).click(()=>{
+    $(this.mos).slideDown()
+    $(this.ocul1).slideUp()
+    $(this.ocul2).slideUp()
+    $(this.ocul3).slideUp()
+   
+  })
+
+}
+}
+var btnone= new showhiden('#wo1','.firstdiv','.secondtdiv','.trediv','.cuartdiv')
+btnone.addrem()
+
+var btntwo= new showhiden('#wo2','.secondtdiv','.firstdiv','.trediv','.cuartdiv')
+btntwo.addrem()
+
+
+var btntre= new showhiden('#wo3','.trediv','.firstdiv','.secondtdiv','.cuartdiv')
+btntre.addrem()
+
+var btncuat= new showhiden('#wo4','.cuartdiv','.secondtdiv','.firstdiv','.trediv')
+btncuat.addrem()
+/*$('.enviar').mouseover(()=>{
  
     $('.arrowenv').animate({
       left: 10
@@ -121,3 +156,10 @@ $('.enviar').mouseout(()=>{
     },300)
     
 })
+ */
+$('#accordion div p').css({width:'80vh'})
+
+
+
+/** slider acordeon*/
+

@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  overflow: hidden;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100% !important;
 }
 * {
   font-family: DINOT-regular;
@@ -13,6 +15,7 @@ nav {
   padding: 10px 0px;
   justify-content: space-between;
   position: absolute;
+  
 }
 
 .icon1 img {
@@ -34,13 +37,15 @@ nav i {
   background: white;
   width: 35%;
   position: absolute;
-  right: -35%;
+  right: -100%;
   top: 0px;
   display: flex;
-  justify-content: cente;
+  justify-content: center;
   transition: all 300ms;
   opacity: 0;
   z-index: 3000;
+
+  
 }
 
 .sbmenu ul {
@@ -213,7 +218,7 @@ nav i {
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
-    z-index: 4000;
+    z-index: 2000;
   }
 
   .sbmenu {
@@ -221,13 +226,15 @@ nav i {
     background: white;
     width: 65%;
     position: absolute;
-    right: -35%;
+    right: -200%;
     top: 0px;
     display: flex;
     justify-content: cente;
     transition: all 300ms;
     opacity: 0;
     z-index: 3000;
+    overflow: hidden;
+    display: none;
   }
 
   .sbmenu ul {
@@ -238,6 +245,8 @@ nav i {
 
     flex-direction: column;
     margin-left: 20px;
+
+    
   }
 
   .sbmenu ul li a {
@@ -252,39 +261,64 @@ nav i {
   .btnms {
     right: 0px;
     opacity: 1;
+    display:block ;
+    
   }
-  .opdacidbg {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.253);
-    position: absolute;
-    top: 0;
-    z-index: 1000;
-    display: none;
-    transition: all 200ms;
+  
+  .todcont{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
   }
 }
 
 /*Paggina quienes somos */
 
+
 .container-whois {
-  height: 100%;
-  width: 100%;
+  height: 71vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20vh;
 }
+iframe{
+  width: 93%;
+  margin-left: 20px;
+  height: 300px;
+ overflow: hidden ;
+  border: none;
+}
+
 .container-whois section {
   width: 27%;
   height: 200px;
   margin-left: 30px;
+  position: relative;
+
 }
 .container-whois div {
-  width: 76%;
-  margin-left: 50px;
+  
+  margin-left: 20px;
   position: relative;
   margin-right: 30px;
+  
+}
+.wocont{
+  width: 65%;
+  margin-right: 70px !important;
+ 
+}
+#wo1,#wo2,#wo3,#wo4{
+  cursor: pointer;
+}
+@media screen and (max-width:1138px){
+  .secondtdiv{
+    margin-top: 200px;
+    transform: scale(0.9);
+  }
 }
 .container-whois > div::before {
   content: "";
@@ -296,9 +330,11 @@ nav i {
 .container-whois section ul {
   display: flex;
   flex-direction: column;
-  height: 100%;
+height: 200px;
   list-style: none;
-
+  position: fixed;
+  top: 300px;
+transform: scale(1.0);
   justify-content: space-between;
 }
 .container-whois section ul li {
@@ -306,7 +342,7 @@ nav i {
   font-family: DINOT-regular;
 }
 .container-whois div h1 {
-  padding-left: 7vh;
+  padding-left: 3vh;
   font-family: DINOT-bold;
   font-weight: bold;
   position: relative;
@@ -340,8 +376,9 @@ nav i {
   background: #fbe818 !important;
 }
 .contact {
-  position: absolute;
-  right: 10px;
+  position: fixed;
+top: 50vh;
+right: 0vw;
   transform: rotate(-90deg);
   font-family: DINOT-regular;
   font-weight: bold;
@@ -353,7 +390,7 @@ nav i {
 .frd::before {
   content: "";
   position: absolute;
-  height: 200px;
+  height: 1200%;
   width: 2px;
   background: #a7a5a6;
   display: block;
@@ -366,6 +403,28 @@ nav i {
   text-align: justify;
 }
 
+#accordion{
+  width: 40em;
+margin: 0 0% !important;
+margin-bottom: 100px !important;}
+#accordion h3{
+  background:#A7A5A6;
+  display:block;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+.arrow{
+  margin-right: 20px;
+  transition:all 30ms
+}
+#accordion div{
+  margin: 0;
+}
+.ui-accordion .ui-accordion-content {
+  overflow: hidden;
+}
 /*pagina de Columnas*/
 
 .columns {
@@ -398,6 +457,7 @@ nav i {
 /*SERVICES*/
 /*SERVICES*/
 /*SERVICES*/
+
 
 .servicdiv {
   height: 100vh;
@@ -485,6 +545,7 @@ nav i {
   font-weight: bold;
   font-size: 23px;
 }
+
 
 /*EDPAGE*/
 /*EDPAGE*/
@@ -602,6 +663,7 @@ nav i {
 /* FORMULARIO*/
 /* FORMULARIO*/
 /* FORMULARIO*/
+
 .contactcont {
   height: 100vh;
   width: 100vw;
@@ -620,19 +682,21 @@ nav i {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  height: 50vh;
+  height: 40vh;
   align-items: center;
   flex-direction: column;
   margin-top: 120px;
+
 }
 .contactform form input,
-textarea {
+textarea ,.mensaje{
   border: none;
   outline: none;
   border-bottom: 1px solid #8b8b8b;
   position: relative;
   font-size: 22px;
   width: 70%;
+  height: 40px;
 }
 
 .formh1 {
@@ -642,31 +706,28 @@ textarea {
  margin-left: 9%;
   font-size: 40px;
   font-family: DINOT-bold;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid#FBE818;
 }
 .bardeco2 {
   position: absolute;
   height: 60vh;
   width: 20px;
-  background: #ffed00;
+  background: #FBE818;
   left: 10px;
   z-index: -1;
   bottom: 0px;
 }
 
-.contactform form input:nth-child(1) {
-  grid-row: 1/1;
-}
-.contactform form input:nth-child(2) {
-  grid-row: 1/1;
-}
+
+
 
 .input {
   transition: all 300ms;
   overflow: hidden;
+  margin-bottom: 30px  !important;
 }
 .input:focus {
-  border-bottom: 1px solid rgb(240, 184, 0);
+  border-bottom: 1px solid ;
 }
 
 .input:focus::placeholder {
@@ -675,21 +736,19 @@ textarea {
 }
 
 .mensaje {
-  grid-row: 2/4;
-  border: 1px solid #8b8b8b !important;
+ 
+  border-bottom: 1px solid #8b8b8b !important;
   padding: 0px;
   border-radius: 5px;
-  max-width: 100%;
-  max-height: 100px;
+  max-width: 42vw;
+  max-height: 600px;
+  height: 30px !important;
   padding: 10px;
 }
 .contenv {
   height: 50px;
   width: 300px;
   transform: translate(-1%);
-}
-.mensaje::placeholder {
-  text-align: center;
 }
 
 .contactcont .contactimg {
@@ -712,63 +771,76 @@ textarea {
 
 .enviar {
 
-  background: rgb(202, 144, 19);
-  border: none;
+  background:none;
   cursor: pointer;
-  position: relative;
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   font-family: DINOT-bold;
   font-size: 20px;
-  border: none !important;
-  border-radius: 2px;
-  display: inline-block;
   height: 100%;
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-
+transform: translate(20%);
   transition: all 300ms;
   overflow: hidden;
 z-index: 2;
+
 }
 
 .enviar::before {
 content: '';
 height: 44%;
-width: 90%;
+width: 25%;
 position: absolute;
 background: #FBE818;
 bottom: 0px;
-left: -100%;
-transition: all 300ms;
+left: -150px;
+opacity: 0;
+
+transition: all 400ms;
 z-index: -1;
 }
-.enviar:hover::before {
-    left: 0px;
-}
-.enviar:hover .contenv img {
-  display: none;
+.enviar::after{
+  content: '';
+  height: 15px;
+  width: 30px;
+  display: block;
+  background-repeat:no-repeat;
+  position: absolute;
+  background-size: contain;
+  left: 5%;
+  transition: all 400ms;
+  
 
+  background:url('../img/arrowss.png')
 }
-.contenv img {
+
+ .enviar:hover::after{
+    left: 8%;
+}
+.enviar:hover::before{
+  left: 33%;opacity: 1;
+}
+
+.arrowenv {
   position: absolute;
   z-index: 10;
-  color: white;
   transform: translate(50px, 19px);
   display: block;
 }
+
 .mensaje:focus {
   border: 1px solid rgb(240, 184, 0) !important;
 }
 .ocon {
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
-
+flex-direction: column;
   justify-content: space-around;
 }
 
@@ -778,22 +850,41 @@ z-index: -1;
   cursor: pointer;
 }
 
+.oconsocial a{
+  text-decoration: none;
+}
+.oconsocial a img{
+   height: 25px;
+   margin: 15px 15px;
+}
+@media screen and (max-height:700px){
+ form{
+   padding-top: 200px;
+   height: 70vh !important;
+ }
 @media screen and (max-width: 800px) {
-
-
+  .input {
+    transition: all 300ms;
+    overflow: hidden;
+    margin-bottom: 0px  !important;
+  }
+  
+.contactcont,.contactform ,form{
+  overflow: hidden !important;
+}
   .formh1 {
-    
+    display: none;
    transform: translate(0,-25vh);
    left: 0;
-   margin-left: 9%;
+   margin-left: 13%;
     font-size: 40px;
     font-family: DINOT-bold;
-    border-bottom: 5px solid yellow;
+    border-bottom: 5px solid #FBE818;
   }
 
 
   .contactform {
-    width: 90%;
+    width: 94%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -804,11 +895,11 @@ z-index: -1;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
     flex-direction: column;
     margin-top: 120px;
-    height: 60%;
+    height: 80%;
     
   }
   .contactform form input,
@@ -818,17 +909,22 @@ z-index: -1;
     border-bottom: 1px solid #8b8b8b;
     position: relative;
     font-size: 22px;
-    width: 100%;
+    width: 92%;
+    height:20%;
+    margin-top: 20px;
+    
   }
   
   
-  .bardeco2{ left: 0px;}
+
  
 
   .contenv {
     height: 50px;
     width: 300px;
     transform: translate(-1%);
+    margin-top: 20px;
+    
   }
 
   
@@ -853,18 +949,27 @@ z-index: -1;
     border: 1px solid rgb(240, 184, 0) !important;
   }
   .ocon {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    margin-top: 30px;
+   width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: space-around;
+  flex-direction: column;
+}
   
-    justify-content: space-around;
-  }
-  
-  .ocon i {
+  .ocon p {
     font-size: 20px;
     color: rgb(65, 65, 65);
     cursor: pointer;
   }
+  
 
-
+.oconsocial a{
+  text-decoration: none;
 }
+.oconsocial a img{
+   height: 25px;
+   margin: 15px 15px;
+}
+
+}}
