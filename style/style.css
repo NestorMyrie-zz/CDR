@@ -100,6 +100,17 @@ nav i {
   margin-left: 40px;
   transform: translate(20%, 50vh);
 }
+@media screen and (max-width:800px){
+  .infox {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 40px;
+    transform: translate(-5%, 60vh);
+  }
+}
 .sbcontainer {
   width: 100%;
   height: 100%;
@@ -284,6 +295,8 @@ nav i {
   align-items: center;
   padding-top: 20vh;
 }
+
+
 iframe{
   width: 93%;
   margin-left: 20px;
@@ -303,26 +316,28 @@ iframe{
   
   margin-left: 20px;
   position: relative;
-  margin-right: 30px;
+  margin-right: 40px;
   
 }
 .wocont{
   width: 65%;
   margin-right: 70px !important;
+  margin-top: 30vh !important;
+  height: 100%;
  
 }
 #wo1,#wo2,#wo3,#wo4{
   cursor: pointer;
 }
-@media screen and (max-width:1138px){
-  .secondtdiv{
-    margin-top: 200px;
-    transform: scale(0.9);
-  }
-}
+
+
+
+
+
 .container-whois > div::before {
   content: "";
-  height: 100%;
+  height: 60%;
+  bottom: 0px;
 
   border: 1px solid #e0e1e1;
   position: absolute;
@@ -333,7 +348,7 @@ iframe{
 height: 200px;
   list-style: none;
   position: fixed;
-  top: 300px;
+  margin-top:-2vh !important;
 transform: scale(1.0);
   justify-content: space-between;
 }
@@ -424,6 +439,41 @@ margin-bottom: 100px !important;}
 }
 .ui-accordion .ui-accordion-content {
   overflow: hidden;
+}
+
+@media screen and (max-width:800px){
+  .container-whois {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  .container-whois h1{margin-top: 50px;}
+  .container-whois div{
+    margin: 0 !important;
+    width: 90%;
+  }
+  .container-whois section{
+    display: none;
+  }
+  .wocont{
+    width: 90%;
+
+  }
+  .contact{
+    display: none
+  }
+  .firstdiv{
+  
+  }
+  .conttext {
+    font-size: 16px !important;
+  text-align:justify !important;
+  padding: 0px !important; 
+  width: 100% !important;
+  }
 }
 /*pagina de Columnas*/
 
@@ -588,6 +638,7 @@ margin-bottom: 100px !important;}
 .frstdv {
   margin-bottom: 50px;
 }
+
 .edcont div:nth-child(1) > h1 {
   font-weight: normal;
   font-size: 40px;
@@ -697,6 +748,9 @@ textarea ,.mensaje{
   font-size: 22px;
   width: 70%;
   height: 40px;
+}
+.bold{
+font-weight: 900;
 }
 
 .formh1 {

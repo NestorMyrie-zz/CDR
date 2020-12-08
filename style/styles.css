@@ -1,0 +1,65 @@
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+.wave_one_section_one {
+  background: url('../img/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+  
+  .wave_one_section_two {
+    background: url('../img/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  .wave_one_section_three {
+    background: url('../img/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  
+  
+  .home_one #fp-nav {
+    right: 50px;
+    transform: translateY(-50%);
+    margin-top: 0 !important;
+  }
+  .home_one #fp-nav li {
+    height: auto !important;
+    margin: 0px !important;
+    
+  }
+  .home_one #fp-nav li a {
+    height: 40px !important;
+    width: 12px !important;
+    opacity: 1;
+    padding: 0px;
+  
+    transition: opacity 0.5s;
+  }
+  .home_one #fp-nav li a span, .home_one #fp-nav li a:before {
+    display: block;
+    background: gray;
+    width: 25px;
+ transition: all 50000 !important; 
+ height: 25px;
+  }
+  .home_one #fp-nav li a span:hover{
+transform: none !important;
+  }
+  a.active span{
+    background: #FBE818 !important;
+    width: 25px !important;
+    height: 25px  !important;
+    margin : -2px !important;
+
+  }
+  
+  

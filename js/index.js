@@ -66,8 +66,10 @@ circ1.togle();
 var circ2 = new circles("#circle2", "#circle0", "#circle1");
 circ2.togle();
 
+
 $("#container").scroll(() => {
   if ($("#container").scrollTop() > 300) {
+    $('#circle1').click()
   }
 });
 var cont = 0;
@@ -112,23 +114,26 @@ $(".arrow-up").click(() => {
 
 
 class showhiden{
-  constructor(clk,mos,ocul1,ocul2,ocul3){
+  constructor(clk,mos,ocul1,ocul2,ocul3,){
     this.clk = clk;
     this.mos = mos;
     this.ocul1= ocul1;
     this.ocul2= ocul2;
     this.ocul3= ocul3;
+   
   }
 addrem(){
   $(this.clk).click(()=>{
-    $(this.mos).slideDown()
-    $(this.ocul1).slideUp()
-    $(this.ocul2).slideUp()
-    $(this.ocul3).slideUp()
+    $(this.mos).slideDown();
+    $(this.ocul1).slideUp();
+    $(this.ocul2).slideUp();
+    $(this.ocul3).slideUp();
    
   })
-
+  
 }
+
+
 }
 var btnone= new showhiden('#wo1','.firstdiv','.secondtdiv','.trediv','.cuartdiv')
 btnone.addrem()
@@ -142,24 +147,60 @@ btntre.addrem()
 
 var btncuat= new showhiden('#wo4','.cuartdiv','.secondtdiv','.firstdiv','.trediv')
 btncuat.addrem()
-/*$('.enviar').mouseover(()=>{
- 
-    $('.arrowenv').animate({
-      left: 10
-  },400)
 
-    
-})
-$('.enviar').mouseout(()=>{
-    $('.arrowenv').animate({
-        left: 0
-    },300)
-    
-})
- */
 $('#accordion div p').css({width:'80vh'})
 
 
 
 /** slider acordeon*/
 
+$('#wo1').click(()=>{
+  $('.listbtn1').addClass('selectliwhois')
+  $('.listbtn2').removeClass('selectliwhois')
+  $('.listbtn3').removeClass('selectliwhois')
+  $('.listbtn4').removeClass('selectliwhois')
+
+  $('#wo1').addClass('bold')
+  $('#wo2').removeClass('bold')
+  $('#wo3').removeClass('bold')
+  $('#wo4').removeClass('bold')
+})
+
+$('#wo2').click(()=>{
+  $('.listbtn2').addClass('selectliwhois')
+  $('.listbtn1').removeClass('selectliwhois')
+  $('.listbtn3').removeClass('selectliwhois')
+  $('.listbtn4').removeClass('selectliwhois')
+
+  $('#wo2').addClass('bold')
+  $('#wo1').removeClass('bold')
+  $('#wo3').removeClass('bold')
+  $('#wo4').removeClass('bold')
+})
+
+$('#wo3').click(()=>{
+  $('.listbtn3').addClass('selectliwhois')
+  $('.listbtn1').removeClass('selectliwhois')
+  $('.listbtn2').removeClass('selectliwhois')
+  $('.listbtn4').removeClass('selectliwhois')
+  $('#wo3').addClass('bold')
+  $('#wo2').removeClass('bold')
+  $('#wo4').removeClass('bold')
+  $('#wo1').removeClass('bold')
+})
+$('#wo4').click(()=>{
+  $('#wo4').addClass('bold')
+  $('#wo2').removeClass('bold')
+  $('#wo3').removeClass('bold')
+  $('#wo1').removeClass('bold')
+  $('.listbtn4').addClass('selectliwhois')
+  $('.listbtn1').removeClass('selectliwhois')
+  $('.listbtn3').removeClass('selectliwhois')
+  $('.listbtn2').removeClass('selectliwhois')
+})
+
+
+
+if (screen.width <= 1080) {
+document.querySelector('body').setAttribute("content", "width=1080; initial-scale=0.5");
+ }
