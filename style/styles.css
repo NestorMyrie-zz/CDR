@@ -29,6 +29,8 @@
   .home_one #fp-nav {
     right: 50px;
     transform: translateY(-50%);
+    width: 20px;
+   
     margin-top: 0 !important;
   }
   .home_one #fp-nav li {
@@ -51,6 +53,9 @@
  transition: all 50000 !important; 
  height: 25px;
   }
+
+
+  
   .home_one #fp-nav li a span:hover{
 transform: none !important;
   }
@@ -63,3 +68,10 @@ transform: none !important;
   }
   
   
+
+  .home_one #fp-nav li a span:hover,  .home_one #fp-nav li a:hover, .home_one #fp-nav li:hover{
+    transform: none !important;
+    width: 25px !important;
+    height: 25px !important;
+    transition: none;
+  }

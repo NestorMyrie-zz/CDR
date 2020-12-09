@@ -200,7 +200,3 @@ $('#wo4').click(()=>{
 })
 
 
-
-if (screen.width <= 1080) {
-document.querySelector('body').setAttribute("content", "width=1080; initial-scale=0.5");
- }
