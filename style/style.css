@@ -568,8 +568,11 @@ width: 100vw;
   .firstdiv,.trediv{
             
     display:block !important;
-    height: 100vh !important;
+    height:100vh !important;
 
+}
+.trediv{
+  margin-bottom: 200px;
 }
 .secondtdiv{
   display: block !important;
