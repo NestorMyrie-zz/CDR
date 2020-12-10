@@ -477,7 +477,6 @@ margin-bottom: 100px !important;}
 
 @media screen and (max-width:800px){
 
-
   .container-whois div h1 {
     padding-left: 0vh;
 text-align: left;
@@ -500,7 +499,7 @@ width: 87vw;
 
   }
   #accordion{
-    transform: scale(0.99,1);
+    transform: scale(0.9,1);
   }
 
 #accordion div{
