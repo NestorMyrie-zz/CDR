@@ -476,7 +476,16 @@ margin-bottom: 100px !important;}
             }
 
 @media screen and (max-width:800px){
-#w
+
+
+  .container-whois div h1 {
+    padding-left: 0vh;
+text-align: left;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    width: 450px;}
+  
 
   .ui-accordion .ui-accordion-content{
     padding: 0px;
@@ -488,7 +497,12 @@ margin-bottom: 100px !important;}
   #accordion h3{
 width: 87vw;
 
+
   }
+  #accordion{
+    transform: scale(0.99,1);
+  }
+
 #accordion div{
 width: 100vw;
 }
@@ -526,6 +540,7 @@ width: 100vw;
   .container-whois section{
     display: none;
   }
+
   #wocont{
     width: 100%;
     overflow: hidden;
