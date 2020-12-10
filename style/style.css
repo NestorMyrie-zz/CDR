@@ -470,7 +470,7 @@ margin-bottom: 100px !important;}
               animation: fload 1s infinite;
               color: #FBE818;
               cursor: pointer;
-              display: none;
+              display: none !important;
             }
 
             @keyframes fload{
@@ -489,7 +489,7 @@ margin-bottom: 100px !important;}
 @media screen and (max-width:800px){
   .arrow{
  
-    display: block;
+    display: block !important;
   }
   .container-whois div h1 {
     padding-left: 0vh;
@@ -565,22 +565,15 @@ width: 100vw;
   .contact{
     display: none
   }
-  .firstdiv,.trediv{
+  .firstdiv,.trediv,.secondtdiv,.cuartdiv{
             
     display:block !important;
-    height:100vh !important;
+    
 
 }
-.trediv{
-  margin-bottom: 200px;
-}
-.secondtdiv{
-  display: block !important;
-  height: 100% !important;
-}
 
-.cuartdiv{
-  display: block !important;
+.firstdiv{
+  height:80vh !important;
 }
   
   .conttext {
@@ -590,8 +583,13 @@ width: 100vw;
   width: 87vw !important;
   }
 
- 
 }
+@media screen and (max-width:360px){
+  .firstdiv{
+    height:90vh !important;
+  }
+}
+
 
 
 @media screen and (max-width:1026px){
