@@ -52,11 +52,24 @@
 
 
         body{
-            overflow-y:scroll !important;
+            overflow-y:hidden !important;
         }
+        .wocont{
+            
+     overflow-y: scroll;
+     overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+    display: none;
+}
         .secondtdiv,.trediv,.cuartdiv{
             
             display:none
+        }
+        @media screen and (max-width:800px) {
+            body{
+            overflow-y:scroll !important;
+        }
         }
  
     </style>
@@ -81,7 +94,7 @@
                         <p>Es tan importante como oportuno comprometernos a construir relaciones fuertes y duraderas con clientes y proveedores, fundadas en la confianza y el beneficio mutuo. </p>
                     </div>
                     <div class="btncont">
-                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <i class="far fa-arrow-alt-circle-down arrow"></i>
                     </div>
             </div>
            
@@ -114,7 +127,7 @@
                 
                         </div>
                         <div class="btncont">
-                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <i class="far fa-arrow-alt-circle-down arrow"></i>
                         </div>
                     </div>
                     <div class="trediv">
@@ -153,7 +166,7 @@
                                
                               </div>
                               <div class="btncont">
-                                <i class="far fa-arrow-alt-circle-down"></i>
+                                <i class="far fa-arrow-alt-circle-down arrow"></i>
                             </div>
                             </div>
                            

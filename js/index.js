@@ -129,6 +129,9 @@ addrem(){
     $(this.ocul1).slideUp();
     $(this.ocul2).slideUp();
     $(this.ocul3).slideUp();
+    $('.wocont').animate({
+      scrollTop:0
+    },100)
    
   })
   

@@ -334,7 +334,7 @@ iframe{
 .wocont{
   width: 65%;
   margin-right: 70px !important;
-  margin-top: 30vh !important;
+  margin-top: 10vh !important;
   height: 100%;
  
 }
@@ -348,7 +348,7 @@ iframe{
 
 .container-whois > div::before {
   content: "";
-  height: 60%;
+  height:70vh;
   bottom: 0px;
 
   border: 1px solid #e0e1e1;
@@ -465,12 +465,12 @@ margin-bottom: 100px !important;}
               left: 45%;
               bottom: -5%;
             }
-            .fa-arrow-alt-circle-down{
+            .arrow{
               font-size: 50px;
               animation: fload 1s infinite;
               color: #FBE818;
               cursor: pointer;
-              display: NONE;
+              display: none;
             }
 
             @keyframes fload{
@@ -487,7 +487,7 @@ margin-bottom: 100px !important;}
             }
 
 @media screen and (max-width:800px){
-  .fa-arrow-alt-circle-down{
+  .arrow{
  
     display: block;
   }
@@ -591,6 +591,15 @@ width: 100vw;
   }
 
  
+}
+
+
+@media screen and (max-width:1026px){
+  .container-whois section {
+    width: 30%;
+    height: 200px;
+    margin-left: 0px !important;
+}
 }
 /*pagina de Columnas*/
 
