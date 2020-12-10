@@ -199,16 +199,26 @@ nav i {
   right: 20px;
 
   top: 20px;
-
   cursor: pointer;
 }
+.contbtnmnu i:nth-child(1)::before{
+  content: '';
+  height: 700%;
+  width: 100%;
+  display: block;
+  z-index: 5000;
+  
+}
+
 .contbtnmnu i {
   display: block;
-  height: 3px;
+  height: 5px;
   width: 90%;
   background: black;
   transition: all 500ms;
   z-index: 5000;
+  cursor: pointer;
+
 }
 .oc1 {
   transform: translateX(-50px);
@@ -460,6 +470,7 @@ margin-bottom: 100px !important;}
               animation: fload 1s infinite;
               color: #FBE818;
               cursor: pointer;
+              display: NONE;
             }
 
             @keyframes fload{
@@ -476,7 +487,10 @@ margin-bottom: 100px !important;}
             }
 
 @media screen and (max-width:800px){
-
+  .fa-arrow-alt-circle-down{
+ 
+    display: block;
+  }
   .container-whois div h1 {
     padding-left: 0vh;
 text-align: left;

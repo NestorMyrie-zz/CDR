@@ -17,6 +17,7 @@ $("#cont").click(() => {
 
   $(".opdacidbg").toggleClass("blk");
 });
+$(".opdacidbg").click(()=>{     $(".sbmenu").toggleClass("btnms");   $(".opdacidbg").toggleClass("blk"); })
 
 $("#circle0").click(() => {
   $("#container").animate(

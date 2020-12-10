@@ -68,10 +68,3 @@ transform: none !important;
   }
   
   
-
-  .home_one #fp-nav li a span:hover,  .home_one #fp-nav li a:hover, .home_one #fp-nav li:hover{
-    transform: none !important;
-    width: 25px !important;
-    height: 25px !important;
-    transition: none;
-  }

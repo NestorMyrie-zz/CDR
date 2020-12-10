@@ -17,9 +17,10 @@
             scrollBar: false,
             scrollOverflow: true,
             animateAnchor: true,
-            css3: true,
+            css3: false,
             verticalCentered: true,
-            afterResponsive: function (isResponsive) {},
+            
+            /**afterResponsive: function (isResponsive) {},
             afterLoad: function (anchorLink, index) {
                 if (index == 6) {
                     $('.header_area, .full_footer').addClass('content-black');
@@ -33,7 +34,7 @@
                 } else {
                     $('#fp-nav,.full_footer').removeClass('hide');
                 }
-            }
+            } */
         });
        
     }
