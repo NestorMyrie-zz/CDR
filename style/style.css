@@ -410,6 +410,7 @@ right: 0vw;
   font-family: DINOT-regular;
   font-weight: bold;
 }
+.contact  a {text-decoration: none;color:black;}
 .frd {
   position: relative;
   display: block;
@@ -784,16 +785,15 @@ width: 100vw;
 }
 
 .d2cont {
-  height: 300px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .carousel {
   width: 80%;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.192);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -803,6 +803,7 @@ width: 100vw;
 .carouseltitle {
   background: #e0e1e1;
   width: 100%;
+ padding-left: 30px;
   position: relative;
 }
 .carouseltitle h1,
@@ -829,98 +830,35 @@ width: 100vw;
   height: 30px;
   background: white;
   border-radius: 50%;
-  float: right;
+  
   margin-right: 20px;
   cursor: pointer;
-}
-
-/* FORMULARIO*/
-/* FORMULARIO*/
-/* FORMULARIO*/
-/* FORMULARIO*/
-
-.contactcont {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contactform {
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contactform form {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  height: 40vh;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 120px;
-
-}
-.contactform form input,
-textarea ,.mensaje{
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #8b8b8b;
-  position: relative;
-  font-size: 22px;
-  width: 70%;
-  height: 40px;
-}
-.bold{
-font-weight: 900;
-}
-
-.formh1 {
   position: absolute;
- transform: translate(0,-25vh);
- left: 0;
- margin-left: 9%;
-  font-size: 40px;
-  font-family: DINOT-bold;
-  border-bottom: 5px solid#FBE818;
+  right: 20px;
 }
-.bardeco2 {
-  position: absolute;
-  height: 60vh;
-  width: 20px;
-  background: #FBE818;
-  left: 10px;
-  z-index: -1;
-  bottom: 0px;
-}
+
+/* FORMULARIO*/
+/* FORMULARIO*/
+/* FORMULARIO*/
+/* FORMULARIO*/
 
 
 
 
-.input {
-  transition: all 300ms;
-  overflow: hidden;
-  margin-bottom: 30px  !important;
-}
-.input:focus {
-  border-bottom: 1px solid ;
-}
 
-.input:focus::placeholder {
-  transform: translate(-100%);
-  transition: all 1s;
-}
+
+
+
+
 
 .mensaje {
  
   border-bottom: 1px solid #8b8b8b !important;
   padding: 0px;
   border-radius: 5px;
-  max-width: 42vw;
-  max-height: 600px;
+;
   height: 30px !important;
+  outline: none;
   padding: 10px;
 }
 .contenv {
@@ -929,34 +867,14 @@ font-weight: 900;
   transform: translate(-1%);
 }
 
-.contactcont .contactimg {
-  height: 70%;
-  width: 30vw;
-  background: url("../img/pexels-yury-kim-585419.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.contactimg::before {
-  content: "";
-  position: absolute;
-  height: 250px;
-  width: 100%;
-  left: -50px;
-  background: rgba(255, 255, 0, 0.562);
-  top: 26%;
-}
+
 
 .enviar {
 
-  background:none;
   cursor: pointer;
   color: black;
   text-decoration: none;
-  text-align: center;
   font-family: DINOT-bold;
-  font-size: 20px;
-  height: 100%;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -965,8 +883,9 @@ font-weight: 900;
 transform: translate(20%);
   transition: all 300ms;
   overflow: hidden;
-z-index: 2;
-
+  position: absolute;
+  bottom:18%;
+  right: 0px;
 }
 
 .enviar::before {
@@ -976,8 +895,7 @@ width: 25%;
 position: absolute;
 background: #FBE818;
 bottom: 0px;
-left: -150px;
-opacity: 0;
+left: 28%;
 
 transition: all 400ms;
 z-index: -1;
@@ -990,7 +908,7 @@ z-index: -1;
   background-repeat:no-repeat;
   position: absolute;
   background-size: contain;
-  left: 5%;
+  left: 20%;
   transition: all 400ms;
   
 
@@ -998,7 +916,7 @@ z-index: -1;
 }
 
  .enviar:hover::after{
-    left: 8%;
+    left: 24%;
 }
 .enviar:hover::before{
   left: 33%;opacity: 1;
@@ -1011,9 +929,7 @@ z-index: -1;
   display: block;
 }
 
-.mensaje:focus {
-  border: 1px solid rgb(240, 184, 0) !important;
-}
+
 .ocon {
   width: 40%;
   display: flex;
@@ -1035,120 +951,4 @@ flex-direction: column;
    height: 25px;
    margin: 15px 15px;
 }
-@media screen and (max-height:700px){
- form{
-   padding-top: 200px;
-   height: 70vh !important;
- }
-@media screen and (max-width: 800px) {
-  .input {
-    transition: all 300ms;
-    overflow: hidden;
-    margin-bottom: 0px  !important;
-  }
-  
-.contactcont,.contactform ,form{
-  overflow: hidden !important;
-}
-  .formh1 {
-    display: none;
-   transform: translate(0,-25vh);
-   left: 0;
-   margin-left: 13%;
-    font-size: 40px;
-    font-family: DINOT-bold;
-    border-bottom: 5px solid #FBE818;
-  }
-
-
-  .contactform {
-    width: 94%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:40px;
-  }
-  .contactform form {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 60vh;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 120px;
-    height: 80%;
-    
-  }
-  .contactform form input,
-  textarea {
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #8b8b8b;
-    position: relative;
-    font-size: 22px;
-    width: 92%;
-    height:20%;
-    margin-top: 20px;
-    
-  }
-  
-  
-
- 
-
-  .contenv {
-    height: 50px;
-    width: 300px;
-    transform: translate(-1%);
-    margin-top: 20px;
-    
-  }
-
-  
-  .contactcont .contactimg {
-  display: none;
-  }
- 
-  
-
-  .enviar:hover .contenv img {
-    display: none;
-  
-  }
-  .contenv img {
-    position: absolute;
-    z-index: 10;
-    color: white;
-    transform: translate(50px, 19px);
-    display: block;
-  }
-  .mensaje:focus {
-    border: 1px solid rgb(240, 184, 0) !important;
-  }
-  .ocon {
-    margin-top: 30px;
-   width: 100%;
-  display: flex;
-  align-items: center;  
-  justify-content: space-around;
-  flex-direction: column;
-}
-  
-  .ocon p {
-    font-size: 20px;
-    color: rgb(65, 65, 65);
-    cursor: pointer;
-  }
-  
-
-.oconsocial a{
-  text-decoration: none;
-}
-.oconsocial a img{
-   height: 25px;
-   margin: 15px 15px;
-}
-
-}}
 

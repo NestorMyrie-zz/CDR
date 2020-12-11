@@ -1,0 +1,208 @@
+body{
+    color: white;
+}
+.contform{
+height: 100vh;
+width: 100vw;
+display: flex;
+background: url('../img/fotoefectos.com_.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.contform > div:nth-child(1), .contform >div:nth-child(2){
+width: 50vw;
+height: 100vh;
+}
+.contform > div:nth-child(1){
+display: flex;
+justify-content: center;
+flex-direction: column;
+position: relative;
+height: 80vh;
+margin-left: 40px;
+}
+.contform > div:nth-child(1) h1{
+font-size: 50px;
+align-self: flex-end;
+margin: 0;
+}
+.d1container ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+height: 250px;
+justify-content: space-evenly;
+
+}
+.d1container ul li{
+position: relative;
+width: 40%;
+padding: 5px ;
+height: 13%;
+line-height: 29px;
+padding-left: 7%;
+transition: all 300ms;
+cursor: pointer;
+}
+.d1container ul li:nth-child(1)::before{
+content: '';
+height:24px;
+width: 24px;
+top:5px;
+position:absolute;
+background:url('../img/phone.svg');
+left:-3px;
+transform:scale(.8)
+}
+.d1container ul li:nth-child(2)::before{
+content: '';
+height:26px;
+width: 34px;
+top:4px;
+position:absolute;
+background:url('../img/email.svg');
+background-position: contain;
+left:-5px;
+transform:scale(.7)
+}
+.d1container ul li:nth-child(3)::before{
+content: '';
+height:29px;
+width: 23px;
+top:3px;
+position:absolute;
+background:url('../img/locate.svg');
+left:-3px;
+transform:scale(.8);
+}
+.d1container >p{
+border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+.social{
+width: 100%;
+position:absolute;
+bottom: -100px;
+display: flex;
+left: 0px;
+transform: scale(0.9);
+}
+.social ul li a img{
+height: 30px;
+
+
+}
+.social ul li {
+transition: all 300ms;
+padding: 14px;
+border-radius: 50%;
+}
+.social ul li:hover{
+background: rgba(255, 255, 255, 0.158);
+}
+.social ul{
+width: 40%;
+display: flex;
+list-style: none;
+justify-content: space-between;
+}
+
+.formcont{
+height: 90%;
+width: 80%;
+border-radius: 5px;
+background: rgba(0, 0, 0, 0.336);
+position: relative;
+
+} 
+.formcont form{
+padding: 20px;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.formcont p{
+width: 90%;
+font-size: 20px;
+font-weight: bold;
+color: white;
+
+}
+.enviar{
+color: white;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.37),
+-1px 1px 0px rgba(0, 0, 0, 0.377);
+}
+.formcont p input{
+font-size: 20px;
+}
+.formcont p input, .formcont p textarea{
+width: 100%;
+height: 40px;
+}
+.mensaje{
+border: none !important;
+height: 100px !important;
+background: hsl(240, 36%, 91%) !important;
+}
+.contform ul{
+padding:0 
+}
+.d1container ul li:hover{
+display: block;
+background: rgba(255, 255, 255, 0.144);
+}
+.black{
+background: black;
+}
+
+.contform > div:nth-child(2){display: flex;justify-content: center; align-items: center;}
+@media screen and (max-width:1024){
+
+
+
+
+.d1container ul li{
+position: relative;
+width: 40%;
+padding: 5px ;
+height: 13%;
+line-height: 29px;
+padding-left: 7%;
+transition: all 1s;
+}
+
+}
+.responsiveh1{
+    display:none
+}
+@media screen and (max-width: 800px) 
+{
+.todcont{
+  height: auto !important;
+}
+.ft{
+  display: none !important;
+}
+.contform div:nth-child(2){
+  width: 100%;
+  margin-top: 20px;
+}
+.formcont{
+    width: 95%;
+    height: 90vh !important;
+}
+.mensaje{
+    width: 90% !important;
+}
+.enviar{
+    bottom: 2%;
+}
+ .responsiveh1{
+     display: block;
+     color: white;
+     margin-left: 20px;
+ }
+
+}

@@ -48,7 +48,7 @@
   }
   .home_one #fp-nav li a span, .home_one #fp-nav li a:before {
     display: block;
-    background: gray;
+    background: #A7A5A6;
     width: 25px;
  transition: all 50000 !important; 
  height: 25px;
