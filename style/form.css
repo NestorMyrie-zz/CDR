@@ -157,7 +157,59 @@ background: rgba(255, 255, 255, 0.144);
 .black{
 background: black;
 }
+button{
+    display: none;
+}
+.enviar {
 
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-family: DINOT-bold;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  transform: translate(20%);
+    transition: all 300ms;
+    overflow: hidden;
+    position: absolute;
+    bottom:18%;
+    right: 0px;
+  }
+  .enviar::before {
+  content: '';
+  height: 44%;
+  width: 25%;
+  position: absolute;
+  background: #FBE818;
+  bottom: 0px;
+  left: 28%;
+  
+  transition: all 400ms;
+  z-index: -1;
+  }
+  .enviar::after{
+    content: '';
+    height: 15px;
+    width: 30px;
+    display: block;
+    background-repeat:no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 20%;
+    transition: all 400ms;
+    
+  
+    background:url('../img/arrowss.png')
+  }
+   .enviar:hover::after{
+      left: 24%;
+  }
+  .enviar:hover::before{
+    left: 33%;opacity: 1;
+  }
 .contform > div:nth-child(2){display: flex;justify-content: center; align-items: center;}
 @media screen and (max-width:1024){
 
@@ -180,7 +232,11 @@ transition: all 1s;
 }
 @media screen and (max-width: 800px) 
 {
-  
+    .enviar{
+    bottom:12%
+    ;
+    display: none;
+    }
 .todcont{
   height: auto !important;
   width: 100vw;
@@ -199,11 +255,9 @@ transition: all 1s;
     height: 90vh !important;
 }
 .mensaje{
-    width: 90% !important;
+    width: 99% !important;
 }
-.enviar{
-    bottom: 2%;
-}
+
  .responsiveh1{
      display: block;
      color: white;
@@ -211,4 +265,20 @@ transition: all 1s;
  }
 
 
+button{display: block;
+    width: 50%;
+    align-self: center;
+height: 50px;
+font-size: 20px;
+}
+}
+@media screen and (max-width: 410px) 
+{
+   form{
+       transform: scale(0.9);
+       
+   }   
+   .responsiveh1{
+       margin:0px
+   }
 }
