@@ -163,7 +163,7 @@ button{
 .enviar {
 
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
     font-family: DINOT-bold;
     width: 60%;
@@ -177,6 +177,7 @@ button{
     position: absolute;
     bottom:18%;
     right: 0px;
+    display: block; 
   }
   .enviar::before {
   content: '';
@@ -210,6 +211,21 @@ button{
   .enviar:hover::before{
     left: 33%;opacity: 1;
   }
+  .bardeco2 {
+    position: absolute;
+    height: 50vh;
+    z-index: 2000;
+    width: 15px;
+    background: #fbe818;
+    bottom:  0px;
+left: 0px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+
+  
 .contform > div:nth-child(2){display: flex;justify-content: center; align-items: center;}
 @media screen and (max-width:1024){
 
@@ -232,6 +248,7 @@ transition: all 1s;
 }
 @media screen and (max-width: 800px) 
 {
+    .bardeco{display: none;}
     .enviar{
     bottom:12%
     ;
@@ -269,6 +286,9 @@ button{display: block;
     align-self: center;
 height: 50px;
 font-size: 20px;
+}
+.enviar{
+    display: none;
 }
 }
 @media screen and (max-width: 410px) 
