@@ -8,6 +8,7 @@ display: flex;
 background: url('../img/fotoefectos.com_.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+overflow: hidden !important;
 
 }
 .contform > div:nth-child(1), .contform >div:nth-child(2){
@@ -179,8 +180,11 @@ transition: all 1s;
 }
 @media screen and (max-width: 800px) 
 {
+  
 .todcont{
   height: auto !important;
+  width: 100vw;
+  overflow:  hidden !important;
 }
 .ft{
   display: none !important;
@@ -190,7 +194,8 @@ transition: all 1s;
   margin-top: 20px;
 }
 .formcont{
-    width: 95%;
+    overflow: hidden !important;
+    width: 100%;
     height: 90vh !important;
 }
 .mensaje{
@@ -204,5 +209,6 @@ transition: all 1s;
      color: white;
      margin-left: 20px;
  }
+
 
 }
