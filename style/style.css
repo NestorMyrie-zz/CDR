@@ -721,6 +721,80 @@ width: 100vw;
   font-weight: bold;
   font-size: 23px;
 }
+.salt{
+  display: none;
+}
+
+@media screen and (max-width:800px){
+.salt{
+  display: block;
+}
+
+  
+.servicdiv {
+  height: 70vh;
+  width: 100vw;
+  padding-top: 10vh;
+  position: relative;
+margin-left: 20px;
+
+}
+.SERVCONT {
+  width: 91%;
+  float: left;
+  margin-right: 0;
+  margin-bottom: 0vh;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+
+
+.contimgserv {
+ display: none;
+}
+
+.contimgserv::before {
+  content: "";
+  position: absolute;
+  height: 20vh;
+  width: 14vh;
+  background: #fbe8188f !important;
+  bottom: 0px;
+  left: 50px;
+}
+
+.bardeco {
+  position: absolute;
+  height: 50vh;
+  z-index: 2000;
+  width: 15px;
+  background: #fbe818;
+  top: 0px;
+  right: 70px;
+}
+
+.redirecth1 {
+  position: absolute;
+  bottom: 0px;
+;
+  width: 100%;
+  transform: translate(-12%,50%);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.redirecth1 a {
+  text-decoration: none;
+
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+}
 
 
 /*EDPAGE*/
