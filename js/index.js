@@ -103,11 +103,27 @@ $("#edej").click(() => {
   $(".servicdiv").slideUp();
   $(".redirecth1").slideUp();
   $(".arrow-up").slideDown();
+  $('.edcont').slideDown()
+  $('.contact').slideUp()
+
 });
+
+
+$('#cosns').click(()=>{
+  $(".servicdiv").slideUp();
+  $('.edcontd').slideDown()
+  $('.arrow-up').slideDown()
+  $('.contact').slideUp()
+
+})
+
 $(".arrow-up").click(() => {
-  $(".servicdiv").slideDown();
-  $(".redirecth1").slideDown();
-  $(".arrow-up").slideUp();
+$('.servicdiv').slideDown()
+$('.edcontd').slideUp()
+$('.edcont').slideUp()
+$(".redirecth1").slideDown();
+$('.contact').slideDown(1000)
+
 });
 
 

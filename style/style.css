@@ -17,6 +17,7 @@ nav {
   justify-content: space-between;
   position: absolute;
   z-index: 1;
+  top: 10px;
   
 }
 
@@ -746,11 +747,12 @@ width: 100vw;
   margin: 0px 10px;
 }
 .edcont {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding-top: 20vh;
   padding-bottom: 200px;
   margin-left: 40px;
+  overflow: hidden;
 }
 .edcont .frstdv:nth-child(1) {
   width: 50%;
@@ -900,4 +902,50 @@ flex-direction: column;
    height: 25px;
    margin: 15px 15px;
 }
+.edcont,.edcontd{
+  display: none;
+}
 
+.edcontd {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 20vh;
+  padding-bottom: 200px;
+  margin: 5%;
+}
+.edcontd .frstdv:nth-child(1) {
+  width: 50%;
+  margin-left: 60px;
+}
+.edcontd .frstdv:nth-child(1) p {
+  font-size: 17px;
+  text-align: justify;
+}
+.lists{
+  margin-top: 420px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lists ul{
+  width: 40%;
+}
+.lists ul li{
+text-align: justify;
+}
+.lists h2{border-bottom: 3px solid black;}
+
+.cdrconsulting{
+  position: relative;
+  display: block;
+}
+.cdrconsulting::before{
+  content: '';
+position:absolute;
+height: 70%;
+width: 30%;
+display: block;
+background: #FBE818;
+z-index: -1;
+bottom: -5px;
+left: -20px;;
+}

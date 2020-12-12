@@ -130,11 +130,7 @@ font-weight: bold;
 color: white;
 
 }
-.enviar{
-color: white;
-text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.37),
--1px 1px 0px rgba(0, 0, 0, 0.377);
-}
+
 .formcont p input{
 font-size: 20px;
 }
@@ -160,6 +156,12 @@ background: black;
 button{
     display: none;
 }
+
+.enviar{
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.37),
+  -1px 1px 0px rgba(0, 0, 0, 0.377);
+  }
 .enviar {
 
     cursor: pointer;
@@ -173,7 +175,6 @@ button{
     font-size: 30px;
   transform: translate(20%);
     transition: all 300ms;
-    overflow: hidden;
     position: absolute;
     bottom:18%;
     right: 0px;
@@ -186,7 +187,7 @@ button{
   position: absolute;
   background: #FBE818;
   bottom: 0px;
-  left: 28%;
+  left: -8%;
   
   transition: all 400ms;
   z-index: -1;
@@ -199,17 +200,18 @@ button{
     background-repeat:no-repeat;
     position: absolute;
     background-size: contain;
-    left: 20%;
+    left:-50px;
     transition: all 400ms;
+    top: 13px;
     
   
     background:url('../img/arrowss.png')
   }
    .enviar:hover::after{
-      left: 24%;
+      left: -39px;
   }
   .enviar:hover::before{
-    left: 33%;opacity: 1;
+    left: -4%;opacity: 1;
   }
   .bardeco2 {
     position: absolute;
@@ -269,6 +271,7 @@ transition: all 1s;
     overflow: hidden !important;
     width: 100%;
     height: 90vh !important;
+    margin-top: 5%;
 }
 .mensaje{
     width: 99% !important;
@@ -278,7 +281,9 @@ transition: all 1s;
      display: block;
      color: white;
      margin-left: 20px;
- }
+     text-align: center;
+margin-top: 40px;
+    }
 
 
 button{display: block;
@@ -286,6 +291,9 @@ button{display: block;
     align-self: center;
 height: 50px;
 font-size: 20px;
+background: white;
+border: none;
+
 }
 .enviar{
     display: none;
@@ -299,5 +307,13 @@ font-size: 20px;
    }   
    .responsiveh1{
        margin:0px
+   }
+
+   .responsiveh1{
+    display: block;
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+margin-top: 40px;
    }
 }
