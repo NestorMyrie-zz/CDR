@@ -133,7 +133,7 @@ $('.contact').slideDown(1000)
 $("#edej2").click(() => {
   $(".servicdiv").slideUp();
   $(".redirecth2").slideUp();
-  $(".arrow-up").slideDown();
+if($('body').width() > 800){  $(".arrow-up").slideDown();}
   $('.edcont').slideDown()
   $('.contact').slideUp()
 
@@ -143,7 +143,8 @@ $("#edej2").click(() => {
 $('#cosns2').click(()=>{
   $(".servicdiv").slideUp();
   $('.edcontd').slideDown()
-  $('.arrow-up').slideDown()
+  if($('body').width() > 800){  $(".arrow-up").slideDown();}
+
   $('.contact').slideUp()
 
 })
