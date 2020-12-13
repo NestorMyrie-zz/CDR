@@ -18,7 +18,6 @@ nav {
   position: absolute;
   z-index: 1;
   top: 10px;
-  
 }
 
 .icon1 img {
@@ -47,8 +46,6 @@ nav i {
   transition: all 300ms;
   opacity: 0;
   z-index: 3000;
-
-  
 }
 
 .sbmenu ul {
@@ -103,7 +100,7 @@ nav i {
   margin-left: 40px;
   transform: translate(20%, 50vh);
 }
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
   .infox {
     width: 90%;
     height: 100%;
@@ -202,13 +199,12 @@ nav i {
   top: 20px;
   cursor: pointer;
 }
-.contbtnmnu i:nth-child(1)::before{
-  content: '';
+.contbtnmnu i:nth-child(1)::before {
+  content: "";
   height: 700%;
   width: 100%;
   display: block;
   z-index: 5000;
-  
 }
 
 .contbtnmnu i {
@@ -219,7 +215,6 @@ nav i {
   transition: all 500ms;
   z-index: 5000;
   cursor: pointer;
-
 }
 .oc1 {
   transform: translateX(-50px);
@@ -269,8 +264,6 @@ nav i {
 
     flex-direction: column;
     margin-left: 20px;
-
-    
   }
 
   .sbmenu ul li a {
@@ -285,20 +278,17 @@ nav i {
   .btnms {
     right: 0px;
     opacity: 1;
-    display:block ;
-    
+    display: block;
   }
-  
-  .todcont{
+
+  .todcont {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    
   }
 }
 
 /*Paggina quienes somos */
-
 
 .container-whois {
   height: 71vh;
@@ -309,12 +299,11 @@ nav i {
   padding-top: 20vh;
 }
 
-
-iframe{
+iframe {
   width: 93%;
   margin-left: 20px;
   height: 300px;
- overflow: hidden ;
+  overflow: hidden;
   border: none;
 }
 
@@ -323,33 +312,28 @@ iframe{
   height: 200px;
   margin-left: 30px;
   position: relative;
-
 }
 .container-whois div {
-  
   margin-left: 20px;
   position: relative;
   margin-right: 40px;
-  
 }
-.wocont{
+.wocont {
   width: 65%;
   margin-right: 70px !important;
   margin-top: 10vh !important;
   height: 100%;
- 
 }
-#wo1,#wo2,#wo3,#wo4{
+#wo1,
+#wo2,
+#wo3,
+#wo4 {
   cursor: pointer;
 }
 
-
-
-
-
 .container-whois > div::before {
   content: "";
-  height:70vh;
+  height: 70vh;
   bottom: 0px;
 
   border: 1px solid #e0e1e1;
@@ -358,11 +342,11 @@ iframe{
 .container-whois section ul {
   display: flex;
   flex-direction: column;
-height: 200px;
+  height: 200px;
   list-style: none;
   position: fixed;
-  margin-top:-2vh !important;
-transform: scale(1.0);
+  margin-top: -2vh !important;
+  transform: scale(1);
   justify-content: space-between;
 }
 .container-whois section ul li {
@@ -405,13 +389,16 @@ transform: scale(1.0);
 }
 .contact {
   position: fixed;
-top: 50vh;
-right: 0vw;
+  top: 50vh;
+  right: 0vw;
   transform: rotate(-90deg);
   font-family: DINOT-regular;
   font-weight: bold;
 }
-.contact  a {text-decoration: none;color:black;}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
 .frd {
   position: relative;
   display: block;
@@ -432,108 +419,104 @@ right: 0vw;
   text-align: justify;
 }
 
-#accordion{
+#accordion {
   width: 40em;
-margin: 0 0% !important;
-margin-bottom: 100px !important;}
-#accordion h3{
-  background:#A7A5A6;
-  display:block;
+  margin: 0 0% !important;
+  margin-bottom: 100px !important;
+}
+#accordion h3 {
+  background: #a7a5a6;
+  display: block;
   width: 90%;
   text-align: center;
   cursor: pointer;
   outline: none;
 }
-.arrow{
+.arrow {
   margin-right: 20px;
-  transition:all 30ms
+  transition: all 30ms;
 }
-#accordion div{
+#accordion div {
   margin: 0;
 }
 .ui-accordion .ui-accordion-content {
   overflow: hidden;
 }
 
-
-
 /* <div class="btncont">
                 <i class="far fa-arrow-alt-circle-down"></i>
             </div>*/
 
+.btncont {
+  position: absolute;
+  left: 45%;
+  bottom: -5%;
+}
+.arrow {
+  font-size: 50px;
+  animation: fload 1s infinite;
+  color: #fbe818;
+  cursor: pointer;
+  display: none !important;
+}
 
-            .btncont{
-              position: absolute;
-              left: 45%;
-              bottom: -5%;
-            }
-            .arrow{
-              font-size: 50px;
-              animation: fload 1s infinite;
-              color: #FBE818;
-              cursor: pointer;
-              display: none !important;
-            }
+@keyframes fload {
+  0% {
+    transform: translate(0, -20px);
+  }
 
-            @keyframes fload{
-              0%{
-                transform: translate(0,-20px);
-              }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
 
-              50%{
-                transform: translate(0,-10px);
-              }
-              100%{
-                transform: translate(0,-20px);
-              }
-            }
-
-@media screen and (max-width:800px){
-  .arrow{
- 
+@media screen and (max-width: 800px) {
+  .arrow {
     display: block !important;
   }
   .container-whois div h1 {
     padding-left: 0vh;
-text-align: left;
+    text-align: left;
     font-weight: bold;
     position: relative;
     display: block;
-    width: 450px;}
-  
+    width: 450px;
+  }
 
-  .ui-accordion .ui-accordion-content{
+  .ui-accordion .ui-accordion-content {
     padding: 0px;
   }
 
-  #accordion{
-    width:99%;
-  margin-bottom: 100px !important;}
-  #accordion h3{
-width: 87vw;
-
-
+  #accordion {
+    width: 99%;
+    margin-bottom: 100px !important;
   }
-  #accordion{
-    transform: scale(0.9,1);
+  #accordion h3 {
+    width: 87vw;
+  }
+  #accordion {
+    transform: scale(0.9, 1);
   }
 
-#accordion div{
-width: 100vw;
-}
+  #accordion div {
+    width: 100vw;
+  }
 
-#accordion p{
-  width: 90% !important;
-}
+  #accordion p {
+    width: 90% !important;
+  }
   .container-whois > div::before {
- display: none;
+    display: none;
   }
 
-  iframe{
+  iframe {
     width: 100% !important;
     margin-left: 20px;
     height: 300px;
-   overflow: hidden ;
+    overflow: hidden;
     border: none;
   }
   .container-whois {
@@ -546,60 +529,58 @@ width: 100vw;
     overflow: hidden;
   }
 
-  .container-whois h1{margin-top: 50px;}
-  .container-whois div{
+  .container-whois h1 {
+    margin-top: 50px;
+  }
+  .container-whois div {
     margin: 0 !important;
     width: 90%;
     padding: 0 !important;
   }
-  .container-whois section{
+  .container-whois section {
     display: none;
   }
 
-  #wocont{
+  #wocont {
     width: 100%;
     overflow: hidden;
-
   }
-  #wocont p{
-    width: 100%  !important;
+  #wocont p {
+    width: 100% !important;
   }
-  .contact{
-    display: none
+  .contact {
+    display: none;
   }
-  .firstdiv,.trediv,.secondtdiv,.cuartdiv{
-            
-    display:block !important;
-    
+  .firstdiv,
+  .trediv,
+  .secondtdiv,
+  .cuartdiv {
+    display: block !important;
+  }
 
-}
+  .firstdiv {
+    height: 80vh !important;
+  }
 
-.firstdiv{
-  height:80vh !important;
-}
-  
   .conttext {
     font-size: 16px !important;
-  text-align:justify !important;
-  padding: 0px !important; 
-  width: 87vw !important;
-  }
-
-}
-@media screen and (max-width:360px){
-  .firstdiv{
-    height:90vh !important;
+    text-align: justify !important;
+    padding: 0px !important;
+    width: 87vw !important;
   }
 }
+@media screen and (max-width: 360px) {
+  .firstdiv {
+    height: 90vh !important;
+  }
+}
 
-
-
-@media screen and (max-width:1026px){
+@media screen and (max-width: 1026px) {
   .container-whois section {
     width: 30%;
     height: 200px;
     margin-left: 0px !important;
-}
+  }
 }
 /*pagina de Columnas*/
 
@@ -634,7 +615,6 @@ width: 100vw;
 /*SERVICES*/
 /*SERVICES*/
 
-
 .servicdiv {
   height: 100vh;
   width: 100%;
@@ -643,6 +623,10 @@ width: 100vw;
 
   overflow: hidden;
 }
+
+
+
+
 .SERVCONT {
   width: 71%;
   float: right;
@@ -704,7 +688,8 @@ width: 100vw;
   right: 70px;
 }
 
-.redirecth1,.redirecth2 {
+.redirecth1,
+.redirecth2 {
   position: absolute;
   bottom: 51vh;
   width: 56%;
@@ -712,7 +697,8 @@ width: 100vw;
   display: flex;
   justify-content: space-around;
 }
-.redirecth1 a,.redirecth2 a {
+.redirecth1 a,
+.redirecth2 a {
   text-decoration: none;
 
   width: 50%;
@@ -721,109 +707,12 @@ width: 100vw;
   font-weight: bold;
   font-size: 23px;
 }
-.salt{
+.salt {
   display: none;
 }
-.redirecth2{
-  display:none;
-}
-
-@media screen and (max-width:800px){
-.salt{
-  display: block;
-}
-.redirecth1{display:none !important;}
-
-  
-.servicdiv {
-  height: 60vh;
-  width: 100vw;
-  padding-top: 10vh;
-  position: relative;
-margin-left: 20px;
-
-}
-.SERVCONT {
-  width: 91%;
-  float: left;
-  margin-right: 0;
-  margin-bottom: 0vh;
-  text-align: left;
-  font-size: 14px;
-  position: relative;
-}
-
-
-.contimgserv {
- display: none;
-}
-
-.contimgserv::before {
-  content: "";
-  position: absolute;
-  height: 20vh;
-  width: 14vh;
-  background: #fbe8188f !important;
-  bottom: 0px;
-  left: 50px;
-}
-
-.bardeco {
-  position: absolute;
-  height: 50vh;
-  z-index: 2000;
-  width: 15px;
-  background: #fbe818;
-  top: 0px;
-  right: 70px;
-}
-
 .redirecth2 {
-  display: block;
- position: relative;
-  bottom: -10vh;
-;
-  width: 90%;
-margin: 0 auto;
-  transform: translate(-5%,0);
-  height: 200px;
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
-.redirecth2 a {
-  text-decoration: none;
-
-  width: 100%;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  font-size: 19px;
-}
-
-}
-@media screen and (max-width:375px){
-
-  .redirecth1 {
-    position: absolute;
-    bottom: 0px;
-  ;
-    width: 100%;
-    transform: translate(-12%,100%);
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .redirecth1 a {
-    text-decoration: none;
-  
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 19px;
-  }
-}
-
 
 /*EDPAGE*/
 /*EDPAGE*/
@@ -889,12 +778,12 @@ margin: 0 auto;
 }
 
 .d2cont {
-  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  display: block !important;
 }
 .carousel {
   width: 80%;
@@ -907,7 +796,7 @@ margin: 0 auto;
 .carouseltitle {
   background: #e0e1e1;
   width: 100%;
- padding-left: 30px;
+  padding-left: 30px;
   position: relative;
 }
 .carouseltitle h1,
@@ -934,11 +823,123 @@ margin: 0 auto;
   height: 30px;
   background: white;
   border-radius: 50%;
-  
+
   margin-right: 20px;
   cursor: pointer;
   position: absolute;
   right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .salt {
+    display: block;
+  }
+  .redirecth1 {
+    display: none !important;
+  }
+
+  .servicdiv {
+    height: 60vh;
+    width: 100vw;
+    padding-top: 10vh;
+    position: relative;
+    margin-left: 20px;
+  }
+  .SERVCONT {
+    width: 91%;
+    float: left;
+    margin-right: 0;
+    margin-bottom: 0vh;
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .contimgserv {
+    display: none;
+  }
+
+  .contimgserv::before {
+    content: "";
+    position: absolute;
+    height: 20vh;
+    width: 14vh;
+    background: #fbe8188f !important;
+    bottom: 0px;
+    left: 50px;
+  }
+
+  .bardeco {
+    position: absolute;
+    height: 50vh;
+    z-index: 2000;
+    width: 15px;
+    background: #fbe818;
+    top: 0px;
+    right: 70px;
+  }
+
+  .redirecth2 {
+    display: block;
+    position: relative;
+    bottom: -10vh;
+    width: 90%;
+    margin: 0 auto;
+    transform: translate(-5%, 0);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .redirecth2 a {
+    text-decoration: none;
+
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  .edcont .frstdv:nth-child(1) {
+    width: 90%;
+    margin-left: 0px;
+  }
+  .edcont {
+    margin: 0 20px;
+  }
+  .carousel {
+    margin: 0 !important;
+    width: 90%;
+  }
+  .carouseltitle {
+    padding-left: 10px !important;
+  }
+  .carouseltitle h2 img {
+    right: -5px;
+  }
+  .carousel-p1 {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .redirecth1 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    transform: translate(-12%, 100%);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .redirecth1 a {
+    text-decoration: none;
+
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+  }
 }
 
 /* FORMULARIO*/
@@ -947,20 +948,10 @@ margin: 0 auto;
 /* FORMULARIO*/
 
 
-
-
-
-
-
-
-
-
 .mensaje {
- 
   border-bottom: 1px solid #8b8b8b !important;
   padding: 0px;
   border-radius: 5px;
-;
   height: 30px !important;
   outline: none;
   padding: 10px;
@@ -971,10 +962,6 @@ margin: 0 auto;
   transform: translate(-1%);
 }
 
-
-
-
-
 .arrowenv {
   position: absolute;
   z-index: 10;
@@ -982,12 +969,11 @@ margin: 0 auto;
   display: block;
 }
 
-
 .ocon {
   width: 40%;
   display: flex;
   align-items: center;
-flex-direction: column;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -997,57 +983,158 @@ flex-direction: column;
   cursor: pointer;
 }
 
-.oconsocial a{
+.oconsocial a {
   text-decoration: none;
 }
-.oconsocial a img{
-   height: 25px;
-   margin: 15px 15px;
+.oconsocial a img {
+  height: 25px;
+  margin: 15px 15px;
 }
-.edcont,.edcontd{
+.edcont,
+.edcontd {
   display: none;
 }
 
 .edcontd {
   height: 100vh;
-  width: 100vw;
-  padding-top: 20vh;
+  width: 90vw;
+  padding-top: 10vh;
   padding-bottom: 200px;
   margin: 5%;
 }
 .edcontd .frstdv:nth-child(1) {
-  width: 50%;
+  width: 80%;
   margin-left: 60px;
 }
 .edcontd .frstdv:nth-child(1) p {
   font-size: 17px;
   text-align: justify;
 }
-.lists{
-  margin-top: 420px;
+.lists {
+  margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.lists ul{
-  width: 40%;
-}
-.lists ul li{
-text-align: justify;
-}
-.lists h2{border-bottom: 3px solid black;}
+.lists ul {
+  width:70vw;
+ 
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+  list-style: none;
+  border-radius: 3px;
 
-.cdrconsulting{
+}
+.lists ul:nth-child(4){
+align-items: center;
+}
+.lists ul li  {
+  position: relative;
+  text-align: left;
+  margin: 10px 0px;
+font-size: 20px;
+}
+.lists ul li::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 10px;
+  background: black;
+top: 30%;
+  left: -30px;
+
+}
+.lists h2 {
+font-size: 30px;
+align-self: center;
+}
+
+.cdrconsulting {
   position: relative;
   display: block;
 }
-.cdrconsulting::before{
+.cdrconsulting::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 30%;
+  display: block;
+  background: #fbe818;
+  z-index: -1;
+  bottom: -5px;
+  left: -20px;
+}
+
+@media screen and (max-width:800px){
+ .frstdv{
+width: 100%;}
+ .edcontd{
+   width: 100%;
+   margin: 0;
+ }
+ 
+
+.edcontd .frstdv:nth-child(1) {
+  margin: 0 auto;
+  margin-bottom:200px ;
+  width: 80vw;
+  padding: 3px;
+}
+
+
+
+
+.lists {
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.lists ul {
+  width:80vw;
+ 
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
+  list-style: none;
+  border-radius: 3px;
+  margin-bottom: 500px;
+
+}
+
+.lists ul li  {
+  position: relative;
+  text-align: left;
+  margin: 3px 0px;
+font-size: 20px;
+}
+.lists ul li::before{
   content: '';
-position:absolute;
-height: 70%;
-width: 30%;
-display: block;
-background: #FBE818;
-z-index: -1;
-bottom: -5px;
-left: -20px;;
+  position: absolute;
+  height: 3px;
+  width: 10px;
+  background: black;
+top: 30%;
+  left: -30px;
+
+}
+.lists h2 {
+font-size: 30px;
+align-self: center;
+border: 1px solid red;
+width: 100%;
+}
+
+
 }

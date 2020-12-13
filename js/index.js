@@ -88,6 +88,7 @@ $("#frcarousel").click(() => {
 });
 $("#scdcarousel").click(() => {
   $(".carousel-p2").slideToggle();
+ 
 
   cont++;
   if (cont == 1) {
@@ -125,6 +126,27 @@ $(".redirecth1").slideDown();
 $('.contact').slideDown(1000)
 
 });
+
+
+
+/*responsive*/
+$("#edej2").click(() => {
+  $(".servicdiv").slideUp();
+  $(".redirecth2").slideUp();
+  $(".arrow-up").slideDown();
+  $('.edcont').slideDown()
+  $('.contact').slideUp()
+
+});
+
+
+$('#cosns2').click(()=>{
+  $(".servicdiv").slideUp();
+  $('.edcontd').slideDown()
+  $('.arrow-up').slideDown()
+  $('.contact').slideUp()
+
+})
 
 
 
