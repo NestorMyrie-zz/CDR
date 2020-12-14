@@ -586,7 +586,7 @@ iframe {
 
 .columns {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 .contcolumns {
   height: 100vh;
@@ -594,8 +594,16 @@ iframe {
   display: flex;
 }
 .contcolumns div {
-  height: 100%;
-  width: 30%;
+  height: 100vh;
+  width: 40vw;
+  filter: grayscale();
+  transition: all 300ms;
+
+
+}
+
+.contcolumns div:hover{
+filter: grayscale(0);
 }
 .contcolumns div:nth-child(1),
 .contcolumns div:nth-child(3),
@@ -607,6 +615,39 @@ iframe {
 .contcolumns div:nth-child(6) {
   background: #e0e1e1;
 }
+
+.contcolumns div:nth-child(1){
+  background: url('../img/1.png');
+  background-position:90%;
+  background-size: cover;
+background-repeat: no-repeat;
+}
+.contcolumns div:nth-child(2){
+  background: url('../img/2.png');
+  background-position:50%;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.contcolumns div:nth-child(3){
+  background: url('../img/3.png');
+  background-position:81%;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+.contcolumns div:nth-child(4){
+  background: url('../img/4.png');
+  background-position:-40% ;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
 .columns p {
   height: 200px;
 }
