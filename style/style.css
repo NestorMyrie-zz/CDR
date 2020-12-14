@@ -721,7 +721,7 @@ iframe {
 /*EDPAGE*/
 .arrow-up {
   display: block;
-  position: absolute;
+  position: fixed;
   right: -10vh;
   display: flex;
   font-size: 18px;
@@ -1082,7 +1082,7 @@ width: 100%;}
 
 .edcontd .frstdv:nth-child(1) {
   margin: 0 auto;
-  margin-bottom:200px ;
+  margin-bottom:0px ;
   width: 80vw;
   padding: 3px;
 }
@@ -1100,7 +1100,7 @@ width: 100%;}
  
 }
 .lists ul {
-  width:90vw;
+  width:89vw;
  
   height: 100%;
   display: flex;
@@ -1133,7 +1133,7 @@ top: 15px;
 
 }
 .lists h2 {
-font-size: 30px;
+font-size: 20px;
 align-self: center;
 width: 100%;
 }
