@@ -153,9 +153,7 @@ background: rgba(255, 255, 255, 0.144);
 .black{
 background: black;
 }
-button{
-    display: none;
-}
+
 
 .enviar{
   color: white;
@@ -165,32 +163,31 @@ button{
 .enviar {
 
     cursor: pointer;
-    color: white;
+  
     text-decoration: none;
     font-family: DINOT-bold;
-    width: 60%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-  transform: translate(20%);
+ 
     transition: all 300ms;
     position: absolute;
     bottom:18%;
-    right: 0px;
+   left:32px;
     display: block; 
   }
   .enviar::before {
   content: '';
-  height: 44%;
-  width: 25%;
+  height: 2px;
+  width: 0%;
   position: absolute;
   background: #FBE818;
   bottom: 0px;
   left: -8%;
   
   transition: all 400ms;
-  z-index: -1;
   }
   .enviar::after{
     content: '';
@@ -200,18 +197,18 @@ button{
     background-repeat:no-repeat;
     position: absolute;
     background-size: contain;
-    left:-50px;
+    left:-23px;
     transition: all 400ms;
     top: 13px;
-    
-  
-    background:url('../img/arrowss.png')
+
+    background:url('../img/arrow.png') no-repeat
   }
    .enviar:hover::after{
-      left: -39px;
+      left: -17px;
   }
   .enviar:hover::before{
-    left: -4%;opacity: 1;
+   opacity: 1;
+   width: 100%;
   }
   .bardeco2 {
     position: absolute;
@@ -249,12 +246,35 @@ transition: all 1s;
     display:none
 }
 @media screen and (max-width: 800px) 
+
+
+
+
+
+
 {
+
+*{
+  color: #000 !important;
+}
+
+
+.mensaje{
+  border: none !important;
+  height: 100px !important;
+  background: hsla(240, 35%, 91%, 0.5) !important;
+  }
+
+  .formcont{
+    height: 90%;
+    width: 80%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    
+    } 
     .bardeco{display: none;}
-    .enviar{
-    bottom:12%
-    ;
-    }
+    
 .todcont{
   height: auto !important;
   width: 100vw;
@@ -286,21 +306,54 @@ margin-top: 40px;
     }
 
 
-button{display: block;
-    width: 50%;
-    align-self: center;
-height: 50px;
-font-size: 20px;
-background: white;
-border: none;
 
+
+button::before{
+  content: '';
+  height: 1px;
+  bottom: 0px;
+  width: 120px;
+  background: #fbe818;
+  display: block;
 }
-.enviar{
-    display: none;
+
+.contform{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background:white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden !important;
+  
+  }
+
+
+  .enviar {
+
+    cursor: pointer;
+    text-decoration: none;
+    font-family: DINOT-bold;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ 
+    transition: all 300ms;
+    position: absolute;
+bottom: 20vh;
+ display: block; 
+  }
 }
-}
-@media screen and (max-width: 410px) 
+
+
+
+
+
+@media screen and (max-width: 415px) 
 {
+  
    form{
        transform: scale(0.9);
        
@@ -315,5 +368,15 @@ border: none;
     margin-left: 20px;
     text-align: center;
 margin-top: 40px;
+
    }
+   .enviar{
+    bottom: 10vh;
+   }
+}
+@media screen and (max-width: 385px) {
+
+  .enviar{
+    bottom: 10vh;
+   } 
 }
