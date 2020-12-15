@@ -11,6 +11,8 @@
         
         <link rel="stylesheet" href="../style/fuentes.css">
         <link rel="stylesheet" href="../style/style.css">
+
+        <link rel="stylesheet" href="../style/animate.css">
         <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../style/carosel.css">
     </head>
@@ -88,7 +90,7 @@
     </style>
     
         <div class="container-whois">
-            <section>
+            <section class="wow  animate__animated animate__backInLeft ">
             <ul>
                 <li id="wo1" class="bold"> <span class="listbtn1 selectliwhois frd"></span><b></b> ¿Quiénes somos? </li>
                 <li id="wo2"> <span class="listbtn2"></span> <b></b>Compliance / Código de Ética</li>
@@ -96,7 +98,7 @@
                 <li id="wo4"> <span class="listbtn4"></span> <b></b>Membresías y Alianzas</li>
             </ul>
             </section>
-          <div class="wocont">
+          <div class="wocont wow  animate__animated animate__backInRight ">
               
             <div class="firstdiv">
                 <h1>¿Quiénes Somos?</h1>
@@ -216,8 +218,16 @@
     
     
         <script src="../js/index.js">
+        
       
         </script>
+          <script src="../js/wow.js"></script>
+          <script>
+              new WOW().init();
+              
+  
+              
+              </script>
     </body>
     </html>
 
