@@ -1400,3 +1400,13 @@ width: 100%;
     transform: rotate(360deg);
   }
 }
+.botonefect{
+
+position: relative;
+border: 1px solid red;
+width: 30px !important;
+
+}
+
+
+
