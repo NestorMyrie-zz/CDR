@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/fuentes.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/form.css">
+  <link rel="stylesheet" href="../style/style.css">
     <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bodyform">
-
+<body>
     <div class="centrado" id="onload">
 
         <div class="lds-roller">
@@ -26,20 +24,19 @@
         </div>
     
     </div>
-   <div class="todcont">
+
+
     <nav>
-        <h1 class="icon1"><img src="../img/navarblack.svg" alt="" srcset=""></h1>
+        <h1 class="icon1"><img src="../img/Grupo 507.png" alt="" srcset=""></h1>
       
        <!-- <i class="fas fa-bars" id="btnms"></i>-->
 
     </nav>
-    
-    <div class="contbtnmnu" id="cont"  style="right: 3px;">
-        <i id="f" style="background: white;"></i>
-        <i id="ff"   style="background: white;"></i>
-        <i id="fff"  style="background: white;" ></i>
-    </div>
-
+    <div class="contbtnmnu" id="cont">
+        <i id="f" ></i>
+        <i id="ff" ></i>
+        <i id="fff" ></i>
+       </div>
     <div class="sbmenu">
         <ul>
             <li> <a href="../index.html"  class="regular">Inicio</a></li>
@@ -49,89 +46,197 @@
             <li><a href="./contact.html" class="regular">Contacto</a></li>
             </ul>
     </div>
-
-   
-
-    <div class="opdacidbg"></div>   
-</div>
-    
- 
-<div class="contform">
-<div class=" ft">
- <div class="d1container">
-     <h1>Contactanos</h1>
-     <p>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur </p>
-        <ul>
-            <li>+001 7334456346</li>
-            <li>Prwad@gmail.com</li>
-            <li>Steed 002 left market</li>
-        </ul>
-
-    </div>
-    <div class="social">
-        <ul>
-            <li> <a href="#"> <img src="../img/face.png" alt=""></a></li>
-            <li> <a href="#"><img src="../img/insta (2).png" alt=""></a></li>
-            <li> <a href="#"> <img src="../img/twit.png" alt=""></a></li>
-        </ul>
-    </div>
-</div>
-
-<div class=""> <div class="formcont">
-<h1  class="responsiveh1"> Contactanos</h1>
+   <div class="form">
+<h1>Contactanos</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellendus rerum, alias iure recusandae tempora. Quidem alias atque molestias delectus quis culpa dolor cumque ipsa! Tempora, inventore ratione. A!
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellendus rerum, alias iure recusandae tempora. Quidem alias atque molestias delectus quis culpa dolor cumque ipsa! Tempora, inventore ratione. A!</p>
 <form action="#">
-        <p>Nombre  <br><input type="text"> </p>
-        <p>Correo <br><input type="text"> </p>
-        <p>Compañía <br><input type="text"> </p>
-        <p >Mensaje <br><input type="text" class="mensaje"></p>
-        <a href="#" class="enviar">Enviar</a>
-    </form>
-</div></div>
+<p> Nombre *<input type="text"><i>Primer Nombre</i></p>
+<p><br> <input type="text"> <i>Segundo nombre</i></p>
+
+<p class="email">Correo Electronico<input type="text" ></p>
+
+<p class="mensaj">Mensaje <input type="text"></p>
+<a href="#" class="envi">Enviar</a>
+</form>
+
 </div>
-   <div class="bardeco2"></div>
-    <style>
-        * .formcont{color: black;}
-      
-    </style>
-    <script src="../js/index.js"></script>
-    <script>
-       $('.enviar').click(()=>{
-        $('#form').submit()
+<div class="map">
+    <h2><b>Localizacion</b></h2>
+    <p>04- Street left to Pizza Hot <br> From Lima Peru</p>
 
-       })
-      var cont =0 
-       $("#cont").click(() => {
-           cont ++
-          if(cont == 1){
-            $("#f").css({'background':'black'});
-  $("#ff").css({'background':'black'});
-  $("#fff").css({'background':'black'});
- 
-          }else if(cont ==2){
-            $("#f").css({'background':'white'});
-  $("#ff").css({'background':'white'});
-  $("#fff").css({'background':'white'});
-  cont =0
-          }
+<img src="https://programacion.net/files/article/20170405040453_mapa.jpg" alt="">
+</div>
+
+<div class="opdacidbg">
+
+
+</div>
+
+
     
-          $('.contform').ready(()=>{
-              $('.contform').animate({
-                  scrollTop:0
-              },300)
-          })
+ 
 
-
-});
-    </script>
-    <style>
-
-        @media screen and (max-width: 800px) {
-            .formcont{height: 100%;overflow:scroll !important;}
-            ::-webkit-scrollbar {
-    display: none;
+ 
+    <script src="../js/index.js"></script>
+ <style>
+     *{color: black;}
+     body{
+         display: flex;
+         height: 100vh;
+         width: 100vw;
+align-items: center;
+     }
+     .form{
+         width:  70vw;
+         padding: 30px;
+     }
+     .form >p {
+         display: block;
+         transform: translate(6%);
+         width: 90%;
+         text-align: justify;
+     }
+     .form form{
+        display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+justify-content: space-around;
+     }
+    form p i{
+        display: block;
+        font-size: 10px;
+     }
+     .form input{
+         display: block;
+         width: 100%;
+         height: 30px;
+     }
+     form p{width: 40%;}
+.email,.mensaj {
+    width: 90%;
 }
-        }
-    </style>
+.mensaj,.mensaj input{
+    height: 70px;
+    margin-bottom: 60px;
+}
+
+.form h1{
+    font-size: 50px;
+    transform: translate(6%);
+    
+}
+.map{
+    display: flex;
+    width: 30%;
+    height: 80%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.map img{
+    width: 100%;
+    display: block;
+    align-self: flex-end;
+    height: 40%;
+}
+
+
+.envi {
+
+  
+    text-decoration: none;
+    font-family: DINOT-bold;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ 
+    transition: all 300ms;
+    bottom:18%;
+    position: relative;
+   left:32px;
+    display: block; 
+  }
+  .envi::before {
+  content: '';
+  height: 30%;
+  width: 0%;
+  position: absolute;
+  background: #FBE818;
+  bottom: 0px;
+  left: -8%;
+  z-index: -1;
+  
+  transition: all 400ms;
+  }
+  .envi::after{
+    content: '';
+    height: 15px;
+    width: 30px;
+    display: block;
+    background-repeat:no-repeat;
+    position: absolute;
+    background-size: contain;
+    left:-23px;
+    transition: all 400ms;
+    top: 13px;
+
+    background:url('../img/arrow.png') no-repeat
+  }
+
+.map h2{
+    font-size: 30px;
+}
+  .envi:hover::after{
+      left: -17px;
+  }
+  .envi:hover::before{
+   opacity: 1;
+   width: 50%;
+  }
+  .map p{
+      font-size: 17px;
+  }
+  @media screen and (max-width:800px) {
+      body{
+          flex-direction: column;
+          overflow: scroll !important;
+          height: 100%;
+      }
+      .form{width: 90%;
+    height: 60%;}
+    .map{
+        width: 80%;
+    }
+
+
+
+    .envi {
+
+  
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+
+transition: all 300ms;
+bottom:18%;
+position: relative;
+left:32px;
+display: block; 
+}
+
+
+    }
+
+ </style>
+   
 </body>
 </html>
 

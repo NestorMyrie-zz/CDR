@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/fuentes.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bodyform">
+
+    <div class="centrado" id="onload">
+
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+    </div>
+   <div class="todcont">
+    <nav>
+        <h1 class="icon1"><img src="../img/navarblack.svg" alt="" srcset=""></h1>
+      
+       <!-- <i class="fas fa-bars" id="btnms"></i>-->
+
+    </nav>
+    
+    <div class="contbtnmnu" id="cont"  style="right: 3px;">
+        <i id="f" style="background: white;"></i>
+        <i id="ff"   style="background: white;"></i>
+        <i id="fff"  style="background: white;" ></i>
+    </div>
+
+    <div class="sbmenu">
+        <ul>
+            <li> <a href="../index.html"  class="regular">Inicio</a></li>
+            <li><a href="./about.html" class="regular">Nosotros</a></li>
+            <li><a href="./columns.html" class="regular">Nuestro equipo</a></li>
+            <li><a href="./services.html" class="regular">Servicios</a></li>
+            <li><a href="./contact.html" class="regular">Contacto</a></li>
+            </ul>
+    </div>
+
+   
+
+    <div class="opdacidbg"></div>   
+</div>
+    
+ 
+<div class="contform">
+<div class=" ft">
+ <div class="d1container">
+     <h1>Contactanos</h1>
+     <p>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur </p>
+        <ul>
+            <li>+001 7334456346</li>
+            <li>Prwad@gmail.com</li>
+            <li>Steed 002 left market</li>
+        </ul>
+
+    </div>
+    <div class="social">
+        <ul>
+            <li> <a href="#"> <img src="../img/face.png" alt=""></a></li>
+            <li> <a href="#"><img src="../img/insta (2).png" alt=""></a></li>
+            <li> <a href="#"> <img src="../img/twit.png" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class=""> <div class="formcont">
+<h1  class="responsiveh1"> Contactanos</h1>
+<form action="#">
+        <p>Nombre  <br><input type="text"> </p>
+        <p>Correo <br><input type="text"> </p>
+        <p>Compañía <br><input type="text"> </p>
+        <p >Mensaje <br><input type="text" class="mensaje"></p>
+        <a href="#" class="enviar">Enviar</a>
+    </form>
+</div></div>
+</div>
+   <div class="bardeco2"></div>
+    <style>
+        * .formcont{color: black;}
+      
+    </style>
+    <script src="../js/index.js"></script>
+    <script>
+       $('.enviar').click(()=>{
+        $('#form').submit()
+
+       })
+      var cont =0 
+       $("#cont").click(() => {
+           cont ++
+          if(cont == 1){
+            $("#f").css({'background':'black'});
+  $("#ff").css({'background':'black'});
+  $("#fff").css({'background':'black'});
+ 
+          }else if(cont ==2){
+            $("#f").css({'background':'white'});
+  $("#ff").css({'background':'white'});
+  $("#fff").css({'background':'white'});
+  cont =0
+          }
+    
+          $('.contform').ready(()=>{
+              $('.contform').animate({
+                  scrollTop:0
+              },300)
+          })
+
+
+});
+    </script>
+    <style>
+
+        @media screen and (max-width: 800px) {
+            .formcont{height: 100%;overflow:scroll !important;}
+            ::-webkit-scrollbar {
+    display: none;
+}
+        }
+    </style>
+</body>
+</html>
+
+
+
+
+
