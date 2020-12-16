@@ -11,6 +11,11 @@
       <div class="slide"><img src="./img/dispute.png"> <p style="text-align: center;">Dispute Board Foundation</p></div>
       <div class="slide"><img src="./img/bynlogoaustralia.png"> <p style="text-align: center;">Society of Construction Law of Australia</p></div>
     
+
+
+      <div class="slide"><img src="./img/lawn.png"> <p style="text-align: center;">Society of Construction Law (UK)</p></div>
+      <div class="slide"><img src="./img/women.png"> <p style="text-align: center;">Arbitral Women</p></div>
+      <div class="slide"><img src="./img/dispute.png"> <p style="text-align: center;">Dispute Board Foundation</p></div>
    </section>
    <script>
      $(document).ready(function(){
@@ -48,11 +53,13 @@
 
 .slick-slide {
     margin: 0px 20px;
+    
 }
 
 .slick-slide img {
     width: 100%;
 }
+
 
 .slick-slider
 {
@@ -162,6 +169,19 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+.slide{
+    height: 300px;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+  .slick-slide{width:100px !important ;margin: 2px;}
+  p{
+      font-size: 10px;
+  }
 }
    </style>
 

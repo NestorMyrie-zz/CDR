@@ -17,7 +17,18 @@ $("#cont").click(() => {
 
   $(".opdacidbg").toggleClass("blk");
 });
-$(".opdacidbg").click(()=>{     $(".sbmenu").toggleClass("btnms");   $(".opdacidbg").toggleClass("blk"); })
+$(".opdacidbg").click(()=>{  
+    $(".sbmenu").toggleClass("btnms");  
+    $(".opdacidbg").toggleClass("blk"); 
+
+
+    $("#f").toggleClass("rt1");
+    $("#ff").toggleClass("oc1");
+    $("#fff").toggleClass("rt2");
+  
+  
+  
+  })
 
 $("#circle0").click(() => {
   $("#container").animate(
@@ -284,3 +295,10 @@ window.onload= function(){
 if($('window').width() < 800){
 
 }
+
+
+
+
+$('.arrow').click(()=>{
+$('.container-whois').animate({scrollTop:200})
+})

@@ -34,6 +34,7 @@ nav i {
   z-index: 4000;
 }
 
+
 .sbmenu {
   height: 100%;
   background: white;
@@ -196,7 +197,7 @@ nav i {
   position: absolute;
   right: 20px;
 
-  top: 20px;
+  top: 30px;
   cursor: pointer;
 }
 .contbtnmnu i:nth-child(1)::before {
@@ -300,7 +301,7 @@ nav i {
 }
 
 iframe {
-  width: 93%;
+  width: 90vw;
   margin-left: 20px;
   height: 300px;
   overflow: hidden;
@@ -321,8 +322,9 @@ iframe {
 .wocont {
   width: 65%;
   margin-right: 70px !important;
-  margin-top: 10vh !important;
-  height: 100%;
+  margin-top: 20vh !important;
+  height: 120%;
+
 }
 #wo1,
 #wo2,
@@ -333,11 +335,13 @@ iframe {
 
 .container-whois > div::before {
   content: "";
-  height: 70vh;
+  height: 60vh;
+  top: 30vh;
   bottom: 0px;
+ 
 
   border: 1px solid #e0e1e1;
-  position: absolute;
+  position: fixed;
 }
 .container-whois section ul {
   display: flex;
@@ -346,8 +350,9 @@ iframe {
   list-style: none;
   position: fixed;
   margin-top: -2vh !important;
-  transform: scale(1);
+  transform: scale(1) translate(20%);
   justify-content: space-between;
+  
 }
 .container-whois section ul li {
   font-size: 19px;
@@ -420,20 +425,21 @@ iframe {
 }
 
 #accordion {
-  width: 40em;
+  width: 100%;
   margin: 0 0% !important;
   margin-bottom: 100px !important;
+border: none !important;
 }
 #accordion h3 {
   background: #a7a5a6;
   display: block;
-  width: 90%;
+ 
   text-align: center;
   cursor: pointer;
   outline: none;
 }
 .arrow {
-  margin-right: 20px;
+  
   transition: all 30ms;
 }
 #accordion div {
@@ -473,6 +479,8 @@ iframe {
   }
 }
 
+
+
 @media screen and (max-width: 800px) {
   .arrow {
     display: block !important;
@@ -506,14 +514,14 @@ iframe {
   }
 
   #accordion p {
-    width: 90% !important;
+    width: 100% !important;
   }
   .container-whois > div::before {
     display: none;
   }
 
   iframe {
-    width: 100% !important;
+    width: 80vw !important;
     margin-left: 20px;
     height: 300px;
     overflow: hidden;
@@ -551,6 +559,8 @@ iframe {
   .contact {
     display: none;
   }
+
+
   .firstdiv,
   .trediv,
   .secondtdiv,
@@ -568,6 +578,11 @@ iframe {
     padding: 0px !important;
     width: 87vw !important;
   }
+
+  .container-whois div{
+height: 100% !important;  }
+
+
 }
 @media screen and (max-width: 360px) {
   .firstdiv {
@@ -991,11 +1006,12 @@ background-repeat: no-repeat;
     font-size: 19px;
   }
 }
+/* FORMULARIO*/
+/* FORMULARIO*/
+/* FORMULARIO*/
+/* FORMULARIO*/
+/*
 
-/* FORMULARIO*/
-/* FORMULARIO*/
-/* FORMULARIO*/
-/* FORMULARIO*/
 
 
 .mensaje {
@@ -1112,6 +1128,8 @@ top: 12%;
 font-size: 30px;
 align-self: center;
 }
+
+*/
 
 /*imagenes de divs de servicios apartado CDR counsultinf*/
 
@@ -1288,7 +1306,7 @@ width: 100%;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: white;
   z-index: 1000200;
   position: absolute;
 }
@@ -1315,7 +1333,7 @@ width: 100%;
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: #FBE818;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
