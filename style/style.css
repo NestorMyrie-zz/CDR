@@ -1063,26 +1063,7 @@ background-repeat: no-repeat;
     height: 120px;
   }
 }
-@media screen and (max-width: 375px) {
-  .redirecth1 {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    transform: translate(-12%, 100%);
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .redirecth1 a {
-    text-decoration: none;
 
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    font-size: 19px;
-  }
-}
 /* FORMULARIO*/
 /* FORMULARIO*/
 /* FORMULARIO*/

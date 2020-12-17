@@ -117,6 +117,7 @@ $("#edej").click(() => {
   $(".arrow-up").slideDown();
   $('.edcont').slideDown()
   $('.contact').slideUp()
+  $('body').css({'overflow-y':'scroll'})
 
 });
 
@@ -126,6 +127,8 @@ $('#cosns').click(()=>{
   $('.edcontd').slideDown()
   $('.arrow-up').slideDown()
   $('.contact').slideUp()
+  $('body').css({'overflow-y':'scroll'})
+
 
 })
 
@@ -135,6 +138,8 @@ $('.edcontd').slideUp()
 $('.edcont').slideUp()
 $(".redirecth1").slideDown();
 $('.contact').slideDown(1000)
+$('body').css({overflow:'hidden'})
+
 
 });
 
