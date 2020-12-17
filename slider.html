@@ -1,65 +1,43 @@
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
 <div class="container">
-
    <section class="customer-logos slider">
-      <div class="slide"><img src="./img/sociedasperuana.png"><p style="text-align: center;">Sociedad Peruana de Derecho de la Construcción</p></div>
+      <div class="slide"><img src="./img/sociedasperuana.png"></div>
    
-      <div class="slide"><img src="./img/lawn.png"> <p style="text-align: center;">Society of Construction Law (UK)</p></div>
-      <div class="slide"><img src="./img/women.png"> <p style="text-align: center;">Arbitral Women</p></div>
-      <div class="slide"><img src="./img/dispute.png"> <p style="text-align: center;">Dispute Board Foundation</p></div>
-      <div class="slide"><img src="./img/bynlogoaustralia.png"> <p style="text-align: center;">Society of Construction Law of Australia</p></div>
+      <div class="slide"><img src="./img/Australia.png"> <p>pruebaaaa</p></div>
+      <div class="slide"><img src="./img/lawn.png"></div>
+      <div class="slide"><img src="./img/dispute.png"></div>
+      <div class="slide"><img src="./img/women.png"></div>
+      <div class="slide"><img src="./img/sociedasperuana.png"></div>
+
+      <div class="slide"><img src="./img/lawn.png"></div>
+      <div class="slide"><img src="./img/dispute.png"></div>
+      <div class="slide"><img src="./img/women.png"></div>
+      <div class="slide"><img src="./img/sociedasperuana.png"></div>
+  
+
     
-
-
-      <div class="slide"><img src="./img/lawn.png"> <p style="text-align: center;">Society of Construction Law (UK)</p></div>
-      <div class="slide"><img src="./img/women.png"> <p style="text-align: center;">Arbitral Women</p></div>
-      <div class="slide"><img src="./img/dispute.png"> <p style="text-align: center;">Dispute Board Foundation</p></div>
    </section>
-   <script>
-     $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-   </script>
-   <style>
-       ::-webkit-scrollbar {
-    display: none;
-}
-     h2{
+</div>
+
+<style>
+
+h2{
   text-align:center;
   padding: 20px;
 }
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
-    
+    margin: 10px 150px;
 }
 
 .slick-slide img {
     width: 100%;
 }
-
 
 .slick-slider
 {
@@ -75,8 +53,6 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
- 
-
 }
 
 .slick-list
@@ -90,7 +66,6 @@
 .slick-list:focus
 {
     outline: none;
-    
 }
 .slick-list.dragging
 {
@@ -134,7 +109,7 @@
 {
     display: none;
     float: left;
-   
+    height: 200px;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -143,6 +118,8 @@
 }
 .slick-slide img
 {
+    height: 200px;
+    width: 180px;
     display: block;
 }
 .slick-slide.slick-loading img
@@ -170,22 +147,28 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slide{
-    height: 200px !important;
-    width: 200px !important;
-    
-  
-}
-
-
-@media screen and (max-width: 800px) {
-    
-  .slick-slide{width:100px !important ;margin: 2px;}
-  p{
-      font-size: 10px;
-  }
-}
-   </style>
-
-
-</div>
+</style>
+<script>
+    $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
