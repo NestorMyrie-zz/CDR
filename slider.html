@@ -1,172 +1,92 @@
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<body>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="./img/sociedasperuana.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/Australia.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/bynlogoaustralia.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/women.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/lawn.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/dispute.png" height="100" width="250" alt="" />
+            </div>
 
-<div class="container">
-   <section class="customer-logos slider">
-      <div class="slide"><img src="./img/sociedasperuana.png"></div>
-   
-      <div class="slide"><img src="./img/Australia.png"> <p>sociedad</p></div>
-      <div class="slide"><img src="./img/lawn.png"></div>
-      <div class="slide"><img src="./img/dispute.png"></div>
-      <div class="slide"><img src="./img/women.png"></div>
-      <div class="slide"><img src="./img/sociedasperuana.png"></div>
-
-      <div class="slide"><img src="./img/lawn.png"></div>
-      <div class="slide"><img src="./img/dispute.png"></div>
-      <div class="slide"><img src="./img/women.png"></div>
-      <div class="slide"><img src="./img/sociedasperuana.png"></div>
-  
-
-    
-   </section>
-</div>
+            <div class="slide">
+                <img src="./img/lawn.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/lawn.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="./img/lawn.png" height="100" width="250" alt="" />
+            </div>
+          
+        </div>
+    </div>
+</body>
 
 <style>
-p {text-align: center;;}
-h2{
-  text-align:center;
-  padding: 20px;
-}
-/* Slider */
 
-.slick-slide {
-    margin: 0px 20px;
-}
 
-.slick-slide img {
-    width: 100%;
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
 }
 
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width:95% !important;
+ margin-right: 10%;}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
 }
 
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 200px;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
 </style>
-<script>
-    $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
