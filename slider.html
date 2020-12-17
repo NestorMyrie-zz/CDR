@@ -20,10 +20,11 @@
    <script>
      $(document).ready(function(){
     $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll:2,
+        infinite:true,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1200,
         arrows: false,
         dots: false,
         pauseOnHover: false,
@@ -35,7 +36,7 @@
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 0
             }
         }]
     });

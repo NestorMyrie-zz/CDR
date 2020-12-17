@@ -303,7 +303,7 @@ nav i {
 iframe {
   width: 95%;
   margin-left: 20px;
-  height:300px;
+  height:200px;
   overflow: hidden !important;
   border: none;
 }
@@ -316,7 +316,7 @@ iframe {
   display:flex;
   justify-content: center;
   align-items: center;
-  background: yellow;
+
 }
 .container-whois div {
   margin-left: 20px;
@@ -354,7 +354,6 @@ iframe {
   position: fixed;
   width: 30%;
 padding-left: 15vw;
-background: red;
   
 
   justify-content: space-between;
@@ -1490,3 +1489,7 @@ width: 30px !important;
 
 
 
+
+.bold{
+  font-weight: bold;
+}
