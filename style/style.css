@@ -309,10 +309,14 @@ iframe {
 }
 
 .container-whois section {
-  width: 27%;
-  height: 200px;
+  width: 35%;
+  height: 100%;
   margin-left: 30px;
   position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
 }
 .container-whois div {
   margin-left: 20px;
@@ -348,10 +352,12 @@ iframe {
   height: 200px;
   list-style: none;
   position: fixed;
-  margin-top: -2vh !important;
-  transform: translate(40%);
-  justify-content: space-between;
+  width: 30%;
+padding-left: 15vw;
+background: red;
   
+
+  justify-content: space-between;
 }
 .container-whois section ul li {
   font-size: 19px;

@@ -65,7 +65,7 @@ body{
     background-repeat: no-repeat;
     margin-top: 50px;
     bottom: 0px;
-    right: -20px;
+    right: 0px;
   }
   
   .contimgserv::before {
@@ -774,9 +774,7 @@ body{
   
   @media screen and (max-width:800px){
   
-  .contact{
-      display: none;
-  }
+  
   
     .lists ul {
       width:70vw;
@@ -885,6 +883,4 @@ body{
     position: absolute;
   }
   
-  * {
-    font-family: DINOT-regular;
-  }
+  
