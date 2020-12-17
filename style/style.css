@@ -456,6 +456,7 @@ border: none !important;
 
 .cuartdiv{
 transform: scale(.9);
+margin-top: 10%;
 }
 
 
@@ -561,11 +562,13 @@ flex-direction: column !important;
   }
 
   iframe {
-    width: 80vw !important;
-    margin-left: 20px;
+    width: 86vw !important;
+ 
     height: 300px;
     overflow: hidden;
     border: none;
+    margin: 0   !important;
+    padding: 0 !important;
   }
   .container-whois {
     height: 100%;
