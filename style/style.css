@@ -647,10 +647,16 @@ height: 100% !important;  }
 
 
 }
+.div img{
+  height: 100vh;
+  width: 50vh;
+}
 
 .contcolumns div:hover{
 filter: grayscale(0);
 }
+
+
 .contcolumns div:nth-child(1),
 .contcolumns div:nth-child(3),
 .contcolumns div:nth-child(5) {
@@ -663,13 +669,13 @@ filter: grayscale(0);
 }
 
 .contcolumns div:nth-child(1){
-  background: url('../img/1.png');
+  background: url('../img/1.jpg');
   background-position:90%;
   background-size: cover;
 background-repeat: no-repeat;
 }
 .contcolumns div:nth-child(2){
-  background: url('../img/2.png');
+  background: url('../img/2.jpg');
   background-position:50%;
   background-size: cover;
 background-repeat: no-repeat;
@@ -678,7 +684,7 @@ background-repeat: no-repeat;
 }
 
 .contcolumns div:nth-child(3){
-  background: url('../img/3.png');
+  background: url('../img/4.jpg');
   background-position:81%;
   background-size: cover;
 background-repeat: no-repeat;
@@ -686,13 +692,56 @@ background-repeat: no-repeat;
 
 }
 .contcolumns div:nth-child(4){
-  background: url('../img/4.png');
-  background-position:-40% ;
+  background: url('../img/3.jpg');
+  background-position:-0% ;
   background-size: cover;
 background-repeat: no-repeat;
 
 
 }
+.contcolumns div:nth-child(4){
+  background: url('../img/3.jpg');
+  background-position:-0% ;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+.contcolumns div:nth-child(4){
+  background: url('../img/3.jpg');
+  background-position:-0% ;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+.contcolumns div:nth-child(4){
+  background: url('../img/3.jpg');
+  background-position:-0% ;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+.contcolumns div:nth-child(4){
+  background: url('../img/3.jpg');
+  background-position:-0% ;
+  background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+@media screen and (max-width:800px){
+  .contcolumns{
+    flex-direction: column;
+  
+  }
+  .contcolumns div{
+    width: 100vw;
+    height:25vh;
+  }
+}
+
 
 .columns p {
   height: 200px;
@@ -707,13 +756,10 @@ background-repeat: no-repeat;
   width: 100%;
   padding-top: 10vh;
   position: relative;
-
-  overflow: hidden;
 }
 
 
-
-
+ 
 .SERVCONT {
   width: 71%;
   float: right;
@@ -1114,7 +1160,9 @@ background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   width: 100%;
+ 
 }
+
 .lists ul {
   width:70vw;
  
