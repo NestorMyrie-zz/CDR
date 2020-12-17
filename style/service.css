@@ -883,4 +883,7 @@ body{
     position: absolute;
   }
   
+  .contact{
+      display: none;
+  }
   
