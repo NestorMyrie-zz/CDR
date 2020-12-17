@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/fuentes.css">
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/form.css">
+  <link rel="stylesheet" href="../style/animate.css">
+
+
     <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
 </head>
 
@@ -47,11 +51,11 @@
             </ul>
     </div>
    <div class="form">
-<h1>Contactanos</h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellendus rerum, alias iure recusandae tempora. Quidem alias atque molestias delectus quis culpa dolor cumque ipsa! Tempora, inventore ratione. A!
+<h1 class="wow animate__animated  animate__bounceInDown forh1" >Contactanos</h1>
+<p class="wow animate_animated animate__flipInX">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellendus rerum, alias iure recusandae tempora. Quidem alias atque molestias delectus quis culpa dolor cumque ipsa! Tempora, inventore ratione. A!
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellendus rerum, alias iure recusandae tempora. Quidem alias atque molestias delectus quis culpa dolor cumque ipsa! Tempora, inventore ratione. A!</p>
 <form action="#">
-<p> Nombre *<input type="text"><i>Primer Nombre</i></p>
+<p class="wow animate_animated animate__slideInRight"> Nombre *<input type="text"><i>Primer Nombre</i></p>
 <p><br> <input type="text"> <i>Segundo nombre</i></p>
 
 <p class="email">Correo Electronico<input type="text" ></p>
@@ -80,163 +84,16 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore repellen
  
     <script src="../js/index.js"></script>
  <style>
-     *{color: black;}
-     body{
-         display: flex;
-         height: 100vh;
-         width: 100vw;
-align-items: center;
-     }
-     .form{
-         width:  70vw;
-         padding: 30px;
-     }
-     .form >p {
-         display: block;
-         transform: translate(6%);
-         width: 90%;
-         text-align: justify;
-     }
-     .form form{
-        display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    height: 100%;
-justify-content: space-around;
-     }
-    form p i{
-        display: block;
-        font-size: 10px;
-     }
-     .form input{
-         display: block;
-         width: 100%;
-         height: 30px;
-     }
-     form p{width: 40%;}
-.email,.mensaj {
-    width: 90%;
-}
-.mensaj,.mensaj input{
-    height: 70px;
-    margin-bottom: 60px;
-}
-
-.form h1{
-    font-size: 50px;
-    transform: translate(6%);
-    
-}
-.map{
-    display: flex;
-    width: 30%;
-    height: 80%;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-.map img{
-    width: 100%;
-    display: block;
-    align-self: flex-end;
-    height: 40%;
-}
-
-
-.envi {
-
-  
-    text-decoration: none;
-    font-family: DINOT-bold;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
- 
-    transition: all 300ms;
-    bottom:18%;
-    position: relative;
-   left:32px;
-    display: block; 
-  }
-  .envi::before {
-  content: '';
-  height: 30%;
-  width: 0%;
-  position: absolute;
-  background: #FBE818;
-  bottom: 0px;
-  left: -8%;
-  z-index: -1;
-  
-  transition: all 400ms;
-  }
-  .envi::after{
-    content: '';
-    height: 15px;
-    width: 30px;
-    display: block;
-    background-repeat:no-repeat;
-    position: absolute;
-    background-size: contain;
-    left:-23px;
-    transition: all 400ms;
-    top: 13px;
-
-    background:url('../img/arrow.png') no-repeat
-  }
-
-.map h2{
-    font-size: 30px;
-}
-  .envi:hover::after{
-      left: -17px;
-  }
-  .envi:hover::before{
-   opacity: 1;
-   width: 50%;
-  }
-  .map p{
-      font-size: 17px;
-  }
-  @media screen and (max-width:800px) {
-      body{
-          flex-direction: column;
-          overflow: scroll !important;
-          height: 100%;
-      }
-      .form{width: 90%;
-    height: 60%;}
-    .map{
-        width: 80%;
-    }
-
-
-
-    .envi {
-
-  
-
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 30px;
-
-transition: all 300ms;
-bottom:18%;
-position: relative;
-left:32px;
-display: block; 
-}
-
-
-    }
 
  </style>
    
+   <script src="../js/wow.js"></script>
+   <script>
+       new WOW().init();
+       
+
+       
+       </script>
 </body>
 </html>
 

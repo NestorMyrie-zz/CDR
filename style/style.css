@@ -292,19 +292,19 @@ nav i {
 /*Paggina quienes somos */
 
 .container-whois {
-  height: 71vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20vh;
+
 }
 
 iframe {
-  width: 90vw;
+  width: 95%;
   margin-left: 20px;
-  height: 300px;
-  overflow: hidden;
+  height:300px;
+  overflow: hidden !important;
   border: none;
 }
 
@@ -322,8 +322,7 @@ iframe {
 .wocont {
   width: 65%;
   margin-right: 70px !important;
-  margin-top: 20vh !important;
-  height: 120%;
+  height: 100%;
 
 }
 #wo1,
@@ -336,7 +335,7 @@ iframe {
 .container-whois > div::before {
   content: "";
   height: 60vh;
-  top: 30vh;
+  top: 20%;
   bottom: 0px;
  
 
@@ -350,7 +349,7 @@ iframe {
   list-style: none;
   position: fixed;
   margin-top: -2vh !important;
-  transform: scale(1) translate(20%);
+  transform: translate(40%);
   justify-content: space-between;
   
 }
@@ -449,6 +448,11 @@ border: none !important;
   overflow: hidden;
 }
 
+.cuartdiv{
+transform: scale(.9);
+}
+
+
 /* <div class="btncont">
                 <i class="far fa-arrow-alt-circle-down"></i>
             </div>*/
@@ -480,6 +484,23 @@ border: none !important;
 }
 
 
+
+.firstdiv{
+display: flex ;
+flex-direction: column;
+
+height: 100vh;
+justify-content: center;
+}
+
+.center{
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+flex-direction: column !important;
+
+}
 
 @media screen and (max-width: 800px) {
   .arrow {
@@ -569,7 +590,7 @@ border: none !important;
   }
 
   .firstdiv {
-    height: 80vh !important;
+    height: 100vh !important;
   }
 
   .conttext {
@@ -1010,7 +1031,7 @@ background-repeat: no-repeat;
 /* FORMULARIO*/
 /* FORMULARIO*/
 /* FORMULARIO*/
-/*
+
 
 
 
@@ -1129,7 +1150,7 @@ font-size: 30px;
 align-self: center;
 }
 
-*/
+
 
 /*imagenes de divs de servicios apartado CDR counsultinf*/
 
@@ -1313,7 +1334,18 @@ width: 100%;
 .hidden{
   overflow: hidden;
 }
+
+
+
 /*cargando*/
+@media screen and (max-width:1300px){
+  .container-whois section ul {
+
+  transform: translate(-10%);
+ 
+    
+  }
+}
 
 
 .lds-roller {
