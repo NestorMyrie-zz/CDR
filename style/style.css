@@ -483,6 +483,16 @@ transform: scale(.9);
   }
 }
 
+.move{
+  display: block;
+  animation: move 900ms;
+}
+
+@keyframes move{
+ 0%{
+   transform: translate(-200%);
+ }
+}
 
 
 .firstdiv{

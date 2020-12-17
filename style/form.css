@@ -153,4 +153,63 @@ display: block;
 
 }
 
+.forh1{
+position: relative;
+display: block;
+animation: nidites 4s;
+}
 
+.forh1::before{
+animation: frbar 2s;
+animation-delay: 2s;
+
+ content: '';
+ height: 33%;
+ width:0%;
+background: #FBE818;
+display: block;
+position: absolute;
+bottom: 10%;
+z-index: -1;
+left: -10px;
+
+    
+}
+
+
+.s{
+    position: relative;
+}
+
+.s::before{
+
+    animation: frbar 1s;
+    animation-delay: 2s;
+    content: '';
+    height: 33%;
+    width:15%;
+    background: #FBE818;
+display: block;
+position: absolute;
+bottom: 10%;
+z-index: -1;
+left: -10px;
+
+}
+
+
+@keyframes frbar{
+    0%{
+        width: 0%;
+    }
+    100%{ width: 15%;}
+}
+
+
+ @keyframes nidites{
+     0%{
+         opacity: 0;
+     }
+     100%{ opacity:1}
+ }
+ 
