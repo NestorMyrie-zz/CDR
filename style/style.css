@@ -502,6 +502,9 @@ flex-direction: column;
 height: 100vh;
 justify-content: center;
 }
+.secondtdiv{
+  margin-top: 10%;
+}
 
 .center{
   height: 100vh !important;
@@ -590,7 +593,7 @@ flex-direction: column !important;
   .contact {
     display: none;
   }
-
+  
 
   .firstdiv,
   .trediv,

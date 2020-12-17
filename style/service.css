@@ -65,7 +65,7 @@ body{
     background-repeat: no-repeat;
     margin-top: 50px;
     bottom: 0px;
-    right: 0px;
+    right: -20px;
   }
   
   .contimgserv::before {
@@ -885,4 +885,6 @@ body{
     position: absolute;
   }
   
-  
+  * {
+    font-family: DINOT-regular;
+  }
