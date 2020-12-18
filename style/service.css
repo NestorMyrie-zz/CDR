@@ -132,6 +132,7 @@ body{
     text-align: unset;
     font-weight: bold;
     display: none;
+    font-style: normal;
   }
   .arrow-u {
     height: 20px;
@@ -634,73 +635,12 @@ body{
   
   .edcontd {
     height: 100vh;
-    width: 90vw;
+    width: 100%;
     padding-top: 10vh;
     padding-bottom: 200px;
-    margin: 5%;
-  }
-  .edcontd .frstdv:nth-child(1) {
-    width: 80%;
-    margin-left: 60px;
-  }
-  .edcontd .frstdv:nth-child(1) p {
-    font-size: 17px;
-    text-align: justify;
-  }
-  .lists {
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-   
+
   }
   
-  .lists ul {
-    width:70vw;
-   
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background:white;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.301);
-    list-style: none;
-    border-radius: 3px;
-  
-  }
-  
-  
-  
-  .lists ul div:nth-child(1){
-    height: 100%;
-  padding-right: 30px;
-    width:60%
-  }
-  .lists ul div:nth-child(2){
-    width:40%
-  }
-  
-  .lists ul li  {
-    position: relative;
-    text-align: justify;
-    margin: 10px 0px;
-  font-size: 20px;
-  }
-  .lists ul li::before{
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 10px;
-    background: black;
-  top: 12%;
-    left: -30px;
-  
-  }
-  .lists h2 {
-  font-size: 30px;
-  align-self: center;
-  }
   
   
   
@@ -812,13 +752,7 @@ body{
    }
    
   
-  .edcontd .frstdv:nth-child(1) {
-    margin: 0 auto;
-    margin-bottom:0px ;
-    width: 80vw;
-    padding: 3px;
-  }
-  
+
   
   
   
@@ -923,4 +857,16 @@ width: 300px !important;
   .btnmove:nth-child(2):hover::before{
     top: 20%;
     left: 1%;
+  }
+  .container-cdr-cont{
+    height: 100%;
+   width: 100vw;
+   border: 1px solid red;
+   display: flex;
+  }
+  .container-cdr-cont >img{
+    width:  30%;
+    height: 100%;
+    
+
   }
