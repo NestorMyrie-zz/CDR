@@ -64,9 +64,19 @@ nav i {
   color: black;
   font-size: 20px;
 }
+
 .sbmenu ul li {
   margin-top: 50px;
   margin-bottom: 30px;
+
+padding: 15px;
+border-radius: 3px;
+box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
+transition: all 1s linear;
+
+}
+.sbmenu ul li:hover{
+  box-shadow:1500px 0 0 0 rgba(0, 0, 0, 0.116) inset;
 }
 .btnms {
   right: 0px;
@@ -100,6 +110,10 @@ nav i {
   justify-content: flex-end;
   margin-left: 40px;
   transform: translate(20%, 50vh);
+}
+
+.infox:nth-child(1){
+  color: white;
 }
 @media screen and (max-width: 800px) {
   .infox {
@@ -523,6 +537,7 @@ flex-direction: column !important;
 }
 
 @media screen and (max-width: 800px) {
+  .cuartdiv{margin: 0 !important;}
   .arrow {
     display: block !important;
   }
@@ -611,6 +626,7 @@ flex-direction: column !important;
     display: block !important;
   }
 
+  
   .firstdiv {
     height: 100vh !important;
   }
@@ -1499,3 +1515,5 @@ width: 30px !important;
 .bold{
   font-weight: bold;
 }
+
+
