@@ -14,7 +14,7 @@
         /* box-shadow: 0px 0px 2px 3px #0000001a;*/
   }
   .marquee {
-    width: var(--marquee-width);
+    width: 94%;
     height: var(--marquee-height);
     background-color: #fff;
     color: #111;
