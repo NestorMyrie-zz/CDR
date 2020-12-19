@@ -677,7 +677,7 @@ height: 100% !important;  }
 
 }
 .cartinfo{
-  height: 20%;
+  height: 28%;
   width: 100%;
   background:rgb(255, 255, 255);
   align-self: flex-end;
@@ -685,13 +685,12 @@ height: 100% !important;  }
   display: flex;
   justify-content: center;
   position: absolute;
-
-transition: all 200ms;
+  transition: all 200ms;
   position: absolute;
   bottom: -100%;
 }
 .contcolumns> div:hover .cartinfo{
- bottom: 0;
+ /* bottom: 0; */
   bottom: 0%;
 }
 .cartinfo h1{
