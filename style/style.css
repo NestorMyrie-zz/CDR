@@ -67,7 +67,7 @@ nav i {
 }
 
 .sbmenu ul li {
-  margin-top: 50px;
+ 
   margin-bottom: 30px;
 
 padding: 15px;
@@ -270,7 +270,7 @@ box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
   }
 
   .sbmenu ul {
-    list-style: url("../img/arrow.png");
+    list-style: url("./img/arrow.png");
     height: 100%;
     width: 80%;
     display: flex;
