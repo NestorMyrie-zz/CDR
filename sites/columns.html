@@ -9,7 +9,13 @@
         <script src="https://kit.fontawesome.com/37d9b1ae40.js" crossorigin="anonymous"></script>
     </head>
     <body>
-       <style> body{overflow: scroll;}</style>
+       <style> body{overflow: hidden !important;}
+    @media screen and (max-width: 800px) {
+        body{
+            overflow-y: scroll !important;
+        }
+    }
+    </style>
         <div class="centrado" id="onload">
 
             <div class="lds-roller">
@@ -55,39 +61,40 @@
                 <div class="div">
                     <div class="cartinfo">
                             <div class="">         
-                                <h1>Nombre</h1>
+                                <h1>Diego Prado</h1>
                                 <h4>Abogado</h4>
-                                <a href=""> Ver Perfil </a>
+                                <a href="../profiles/diegoprado.html"> Ver Perfil </a>
                             </div>
                     </div>
                 </div>
                 <div class="div">
                     <div class="cartinfo">
                         <div class="">         
-                            <h1>Nombre</h1>
-                            <h4>Abogado</h4>
-                            <a href=""> Ver Perfil </a>
+                            <h1>Victor Sobrado</h1>
+                            <h4>Administrador Contractual</h4>
+                            <a href="../profiles/victorsobrado.html"> Ver Perfil </a>
                         </div>
                     </div>
                 </div>
                 <div class="div">
                     <div class="cartinfo">
                         <div class="">         
-                            <h1>Nombre</h1>
-                            <h4>Abogado</h4>
-                            <a href=""> Ver Perfil </a>
+                            <h1>Sophia Gonzales</h1>
+                            <h4>Abogada</h4>
+                            <a href="../profiles/sophiagonzales.html"> Ver Perfil </a>
                         </div>
                 </div>
                 </div>
                 <div class="div">
                     <div class="cartinfo">
                         <div class="">         
-                            <h1>Nombre</h1>
-                            <h4>Abogado</h4>
-                            <a href=""> Ver Perfil </a>
+                            <h1>Tatiana Herrada</h1>
+                            <h4>Directora</h4>
+                            <a href="../profiles/TatianaHerrada.html"> Ver Perfil </a>
                         </div>
                 </div>
                 </div>
+                
               
             </div>
             <div class="ftcolumns"></div>
@@ -105,10 +112,14 @@
       
         </script>
 
-        <script> 
-      
-
-
-        </script>
+       <style>
+       @media screen and (max-width: 800px){
+           nav{
+               background: white;
+               top: 0;
+                 position: relative;
+           }
+       }
+       </style>
         </body> 
 </html>
