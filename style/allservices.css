@@ -231,7 +231,6 @@ font-size: 30px;
 font-size: 20px;
 width: 80%;
 align-self: center;
-margin-top: 170px;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -241,6 +240,7 @@ justify-content: center;
     margin-top: 20px;
     text-align: left;
     padding-right: 60px;
+    position: relative;
 }
 .desccomplete ul{
     position: relative;
@@ -255,17 +255,109 @@ justify-content: center;
     left: -20%;
     top: 0%;
 }
-
-.desccomplete li::after{
-    content: '';
-    height: 30%;
-    width: 5%;
-    border-bottom: 11px solid #FFED00;
-    border-left: 11px solid #FFED00;
-    position: absolute;
-    left: -20.3%;
-    bottom:  -10%;
+.desccomplete ul:last-child:after{
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-bottom: 11px solid #FFED00;
+  border-left: 11px solid #FFED00;
+  position: absolute;
+left: -22.7%;
+  bottom:  -1%;
 
 }
 
+.back {
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+text-decoration: none;
+color: black;
 
+}
+.back::before{
+  content: '';
+  height: 50%;
+  width: 20px;
+  background: url('../img/arrow.png') no-repeat;
+  position: absolute;
+  bottom: 26%;
+  left: -25px;
+  transition:  all 300ms;
+}
+.back:hover::before{
+  left: -20px;
+}
+
+
+@media screen and (max-width:1200px){
+
+.ttdesc{
+    height: 80%;
+    transform: scale(1,.9);
+}
+
+.desctittle{
+margin-bottom: 30% !important;
+
+font-size: 25px;
+}
+}
+
+
+@media screen and (max-width:800px){
+  .container img{
+    display: none;
+  }
+  .ttdesc{
+    width: 100%;
+    height: 100%;
+  }
+  .container{height: 90%;
+  width: 100%;
+margin-bottom: 100px;}
+
+
+  .desccomplete ul::before{
+   display: none;
+}
+
+.desccomplete li:last-child::after{
+    display: none;
+
+}
+.desccomplete ul li{
+  margin-top: 20px;
+  text-align: justify;
+  padding-right: 0px;
+  position: relative;
+}
+.desctittle{margin-top: 20%;
+margin-bottom: 2% !important;
+}
+body{
+  overflow-y: scroll;
+}
+
+
+.back {
+  position: absolute;
+  left:20%;
+  bottom: -60px;
+  width: 100%;
+text-decoration: none;
+color: black;
+
+
+}
+.back::before{
+  content: '';
+  height: 50%;
+  width: 20px;
+  background: url('../img/arrow.png') no-repeat;
+  position: absolute;
+  bottom: 26%;
+  left: -25px;
+  transition:  all 300ms;
+}
+}
