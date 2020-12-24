@@ -116,6 +116,10 @@
 [class*="col-"] {
     width: 80%;
   }
+  .fa-linkedin{
+    font-size: 30px;
+    list-style: none !important;
+  }
   
   @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -172,3 +176,18 @@
   }
   .back:hover::before{
     left: -20px;}  
+
+    @media screen and (max-width:800px){
+    .linkedin{
+      width: 30%;
+      margin: 10px;
+    }
+    .back {
+      position: absolute;
+      left: 60%;
+      bottom: 8px;
+    text-decoration: none;
+    color: black;
+    
+    }
+    }
