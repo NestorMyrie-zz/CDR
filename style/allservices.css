@@ -304,6 +304,20 @@ font-size: 25px;
 }
 }
 
+@media screen and (max-width:1500px){
+
+  .ttdesc{
+      height: 80%;
+      transform: scale(1,.9);
+  }
+  
+  .desctittle{
+  margin-bottom: 30% !important;
+  
+  font-size: 25px;
+  }
+  }
+
 
 @media screen and (max-width:800px){
   .container img{

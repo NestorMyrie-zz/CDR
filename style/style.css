@@ -1280,10 +1280,7 @@ flex-direction: column;
   height: 25px;
   margin: 15px 15px;
 }
-.edcont,
-.edcontd {
-  display: none;
-}
+
 
 .edcontd {
   height: 100vh;
