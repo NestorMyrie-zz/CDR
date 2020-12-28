@@ -149,6 +149,7 @@ margin-bottom: 20px;
 @media screen and (max-width: 800px){
     body{
         overflow-x: hidden;
+        overflow-y: scroll !important;
         height: 70vh;
         background-position:90%;
     }
@@ -162,7 +163,7 @@ margin-bottom: 20px;
 
 }
 .botones-redirect a{
-    width: 37%;
+    width: 80%;
 
     font-size: 13px;
     padding:8px 9px;
@@ -178,7 +179,12 @@ margin-bottom: 20px;
     text-align: justify;
     font-size: 20px;
 }
+.botones-redirect{
+    flex-direction: column;
+    width: 90%;
 }
+}
+
 @media screen and (max-width: 1100px){
     body{
         background-position:50%;
