@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style/fuentes.css">
 <link rel="stylesheet" type="" href="../style/style.css">
-        <link href="css/style.css" rel="stylesheet">
         
     </head>
     <body> 
@@ -33,7 +32,7 @@
            <!-- <i class="fas fa-bars" id="btnms"></i>-->
     
         </nav>
-        <div class="contbtnmnu" id="cont">
+ <div class="contbtnmnu" id="cont">
             <i id="f" ></i>
             <i id="ff" ></i>
             <i id="fff" ></i>
@@ -49,18 +48,18 @@
         </div>
     
   <div class="contain">
-<h1>Servicios</h1>
-<div class="servcontent">
-<p>
-    Trabajamos en distintas áreas para asegurarnos de cubrir todas las necesidades legales de los proyectos de construcción e infraestructura.
-    
-    Nuestros ámbitos de acción incluyen: Contratos de Ingeniería y Construcción, Administración Contractual, Reclamaciones de Construcción, Inversión Privada y Consultoría Legal.
-    
-    Además, contamos con una línea especializada en capacitaciones in house y cursos online en los temas de nuestro expertise.</p>
-  <div class="btnconte">
-    <div class=""><h2><a href="../sites/CDRCounsulting.html"  style="text-decoration: none; color: black;">CDR Counsulting</a></h2></div><div class=""> <h2><a href="./CDREjecutiva.html" style="color: black; text-decoration: none;">CDR Educación Ejecutiva</a></h2></div>
-  </div>
-</div>    
+        <h1>Servicios</h1>
+      <div class="servcontent">
+        <p>
+             Trabajamos en distintas áreas para asegurarnos de cubrir todas las necesidades legales de los proyectos de construcción e infraestructura.
+        
+             Nuestros ámbitos de acción incluyen: Contratos de Ingeniería y Construcción, Administración Contractual, Reclamaciones de Construcción, Inversión Privada y Consultoría Legal.
+        
+             Además, contamos con una línea especializada en capacitaciones in house y cursos online en los temas de nuestro expertise.</p>
+        <div class="btnconte">
+            <div class=""><h2><a href="../sites/CDRCounsulting.html"  style="text-decoration: none; color: black;">CDR Counsulting</a></h2></div><div class=""> <h2><a href="./CDREjecutiva.html" style="color: black; text-decoration: none;">CDR Educación Ejecutiva</a></h2></div>
+        </div>
+    </div>    
 <img src="../img/fotoefectos.com_.jpg" alt="">
   </div>
  
@@ -72,9 +71,12 @@
 body{background: url('../img/back.svg') no-repeat;
     background-size: cover;
     overflow: hidden;
+    height: 100vh;
+
+
 }
 .contain{
-height: 100vh;
+    height: 100vh;
 width: 100vw;
 display:  flex;
 align-items: center;
@@ -89,7 +91,7 @@ font-size: 50px;
 margin-top: 14%;
 
 
-;}
+}
 .servcontent{
 
 width: 56%;;
@@ -226,14 +228,23 @@ z-index: -1;
 
 @media screen and (max-width: 800px){
    body{
-       background-position: 20%;
+       background-position: 30%;
+       height: 100%;
+       background-attachment: fixed;
+
+   }
+   .contain{
+       height: 100%;
+       width: 100%;
    }
     .contain img{
         display: none;
+
     }
     .servcontent{
         width: 100%;
         border: none;
+        height: 90%;
     }
 
 
@@ -241,32 +252,55 @@ z-index: -1;
         margin-top: 40%;
 }
 .servcontent div div h2{
+    position:relative;
+    text-align: left;
 font-size: 15px;
+width: 100%;
+}
+.servcontent div div h2::before{
+    content: '';
+    height: 100%;
+    width: 18px;
+    background: url('../img/arrow.png') no-repeat;
+    
+    display: block;
+    position: absolute;
+   
+}
+.servcontent div div:nth-child(1) h2::before{
+   left: -9%;
+   
+}
+.servcontent div div:nth-child(2) h2::before{
+   left: -9%;
+   
 }
 .btnconte div{
     border: none !important;
-    margin-top: 20%;
 }
 .servcontent div div{
     width: 50%;
     padding: 0px;
 margin:0;
-margin-top: 20%;
+margin-top: 10%;
 display: flex;
 justify-content: center;
-align-items: center;}
+align-items: center;
+}
 
 
 
 .btnconte{
 
     flex-direction: column;
-    height: 100%;
-    transform: translate(-0%,42%);
+    height: 20%;
+    
+
 }
 .btnconte div{
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0;
+    width: 100% !important;
 }
 
 
