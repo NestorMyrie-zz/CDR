@@ -21,7 +21,7 @@ nav {
 }
 
 .icon1 img {
-  width: 250px;
+  width: 100% ;
   margin-left: 20px;
 }
 
@@ -451,7 +451,7 @@ border: none !important;
   background: #a7a5a6;
   display: block;
  
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   outline: none;
 }
@@ -1098,6 +1098,12 @@ flex-direction: column;
   width: 100%;
   padding-left: 30px;
   position: relative;
+  margin-bottom: 20px !important;
+
+
+}
+.carouseltitle, .carousel-p1,.carousel-p2{
+  transform: scale(.91);
 }
 .carouseltitle h1,
 .carousel {
@@ -1136,6 +1142,10 @@ flex-direction: column;
   position:absolute;
  left: 45vw;
  display: none;
+}
+
+.amarillo{
+background: #fbe818;
 }
 @media screen and (max-width: 800px) {
   .arrow-up2{display: block;}
