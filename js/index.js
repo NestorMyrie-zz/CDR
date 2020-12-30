@@ -292,7 +292,9 @@ $('#wo4').click(()=>{
 
 
 window.onload= function(){
+setTimeout(()=>{
   $('#onload').fadeOut()
+},100)
 
 }
 

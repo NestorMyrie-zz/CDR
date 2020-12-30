@@ -108,6 +108,7 @@ background:url('../img/arrow.png') no-repeat
 
 .map h2{
 font-size: 30px;
+margin-left:3%
 }
 .envi:hover::after{
  left: -17px;
@@ -118,6 +119,8 @@ width: 50%;
 }
 .map p{
  font-size: 17px;
+margin-left:3%
+
 }
 @media screen and (max-width:800px) {
  body{

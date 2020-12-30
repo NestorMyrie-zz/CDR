@@ -9,19 +9,11 @@
 
 .titulo
 {
-    padding:30px 0px;
+    padding:10px 0px;
 
 }
 
-.gris-l
-{
-    margin: 0%;
-    padding: 0%;
-    width: 60px;
-    height: 10px;
-    display: inline-block;
-    background-color: gray;
-}
+
 
 .liner
 {
@@ -48,8 +40,9 @@
 }
 
 .content {
-      font-size: 0.7rem;
+      font-size: 1em;
       height: 20%;
+      text-align: justify;
 }
 .colorbox
 {
@@ -76,9 +69,10 @@
     text-decoration: none;
     padding: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.315); */
-    margin-top: 4%;
+    margin-top: 7%;
     font-weight: bold;
-    font-size: 1.42rem;
+    font-size: 1.22rem;
+    margin-right: 3%;
   }
 
  
