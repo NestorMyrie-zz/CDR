@@ -111,7 +111,7 @@ box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
 }
 
 .infox:nth-child(1){
-  color: white;
+  color: black;
 }
 @media screen and (max-width: 800px) {
   .infox {
