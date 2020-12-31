@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../style/fuentes.css">
         <link rel="stylesheet"  href="../style/style.css">
-
+        <link rel="stylesheet" href="../style/animate.css">
     </head>
     <body>
         <div class="centrado" id="onload">
@@ -48,8 +48,8 @@
         </div>
     
     <div class="contain">
-<h1>CDR Counsulting</h1>
-<p>
+<h1 class=" wow animate__animated animate__fadeInDownBig">CDR Counsulting</h1>
+<p class=" wow animate__animated animate__fadeInDownBig">
     Dada nuestra alta especialización en Derecho de la Construcción 
 y Resolución de Controversias, dictamos capacitaciones in 
 house, desarrolladas a la medida para empresas interesadas en 
@@ -58,11 +58,11 @@ temas de nuestro expertise.
 Realizamos asesorías en las siguientes áreas:
 </p>
 <div class="botones-redirect">
-<a href="../sites/Contratos de ingeniería y construcción.html">Contratos de Ingenieria y construcccion</a>
-<a href="../sites/Administracion Contractual.html"> Administracion Contractual</a>
-<a href="../sites/reclamaciones-de-construccion.html"> Reclamaciones de Construccion</a>
-<a href="../sites/Inversión Privada y Concesiones.html"> Inversión Privada y Concesiones</a>
-<a href="../sites/Resolucion de controversias.html">Resolución de controversias
+<a href="../sites/Contratos de ingeniería y construcción.html" class="wow animate__animated animate__bounceInLeft">Contratos de Ingenieria y construcccion</a>
+<a href="../sites/Administracion Contractual.html"  class="wow animate__animated animate__bounceInRight"> Administracion Contractual</a>
+<a href="../sites/reclamaciones-de-construccion.html"  class="wow animate__animated animate__bounceInLeft"> Reclamaciones de Construccion</a>
+<a href="../sites/Inversión Privada y Concesiones.html"  class="wow animate__animated animate__bounceInRight"> Inversión Privada y Concesiones</a>
+<a href="../sites/Resolucion de controversias.html"  class="wow animate__animated animate__bounceInLeft">Resolución de controversias
      </a>
 <a href=""></a>
 </div>
@@ -120,7 +120,7 @@ margin-bottom: 20px;
 .botones-redirect a{
     width: 40%;
     text-decoration: none;
-    border: 1px solid black;
+  box-shadow:  0px 0px 1px 1px black inset;
     font-size: 16px;
     color:black;
     padding:20px 10px;
@@ -133,7 +133,8 @@ margin-bottom: 20px;
 }
 .botones-redirect a:hover{
     background:#FFED00 ;
-    border: none;
+    box-shadow: none;
+
 }
 .botones-redirect a:nth-child(6){
     border: none;
@@ -197,5 +198,11 @@ margin-bottom: 20px;
         
             </div>
             <script src="../js/index.js"> </script>
+
+            <script src="../js/wow.js"></script>
+   <script>
+       new WOW().init();
+
+       </script>
     </body>
 </html>

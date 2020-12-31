@@ -151,6 +151,10 @@ box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
       width: 100vw;
       
     }
+
+    body{
+      overflow-y: scroll !important;
+    }
   }
 
   .contbtnmnu {
@@ -224,10 +228,10 @@ box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .desctittle{
-    height: 20%;
         color: #131312;            
     text-align: left ;
     font-family: DINOT-bold;
@@ -237,7 +241,6 @@ width: 90%;
 font-size: 30px;
 }
 .desccomplete  {
-    height: 20%;
 font-size: 20px;
 width: 80%;
 align-self: center;

@@ -144,6 +144,19 @@ $('body').css({overflow:'hidden'})
 });
 
 
+$('#frcarousel').click(()=>{
+$('.carou1').toggleClass('amarillo')
+
+})
+
+
+$('#scdcarousel').click(()=>{
+
+
+  $('.carou2').toggleClass('amarillo')
+
+  })
+
 
 
 /*responsive*/
