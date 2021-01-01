@@ -114,6 +114,11 @@ box-shadow:0 0 0 0px rgba(0, 0, 0, 0.116) inset;
   color: white;
 }
 @media screen and (max-width: 800px) {
+
+  .icon1 img {
+    width: 70% ;
+    margin-left: 20px;
+  }
   .infox {
     width: 90%;
     height: 100%;

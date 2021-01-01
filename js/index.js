@@ -152,7 +152,6 @@ $('.carou1').toggleClass('amarillo')
 
 $('#scdcarousel').click(()=>{
 
-
   $('.carou2').toggleClass('amarillo')
 
   })
